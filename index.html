@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-title-key="meta.homeTitle" data-page="home">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.homeTitle">Mari Design Co. | Design gráfico</title>
+  <meta
+    name="description"
+    data-i18n="meta.description"
+    data-i18n-attr="content"
+    content="Mari Design Co., o estúdio de design gráfico de Marina. Identidade, editorial e digital."
+  />
+  <meta name="theme-color" content="#101011" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Conteúdo</a>
+
+  <!-- texture layers -->
+  <div class="site-noise" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Mari Design Co.">
+        <span class="brand__name">Mari Design Co.</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a class="animated-link" href="#work">
+          <span class="link-mask">
+            <span class="link-copy" data-i18n="nav.projects">Projetos</span>
+            <span class="link-copy clone" aria-hidden="true" data-i18n="nav.projects">Projetos</span>
+          </span>
+        </a>
+        <a class="animated-link" href="servicos.html">
+          <span class="link-mask">
+            <span class="link-copy" data-i18n="nav.services">Serviços</span>
+            <span class="link-copy clone" aria-hidden="true" data-i18n="nav.services">Serviços</span>
+          </span>
+        </a>
+        <a class="animated-link" href="#about">
+          <span class="link-mask">
+            <span class="link-copy" data-i18n="nav.about">Sobre</span>
+            <span class="link-copy clone" aria-hidden="true" data-i18n="nav.about">Sobre</span>
+          </span>
+        </a>
+        <a class="animated-link" href="#contact">
+          <span class="link-mask">
+            <span class="link-copy" data-i18n="nav.contact">Contato</span>
+            <span class="link-copy clone" aria-hidden="true" data-i18n="nav.contact">Contato</span>
+          </span>
+        </a>
+        <span class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </span>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero wrap" aria-label="Mari Design Co.">
+        <div class="hero__inner">
+          <p class="hero__mark" data-enter="1">
+            <span class="paren">(</span>Mari Design Co.<span class="paren">)</span>
+          </p>
+
+          <p class="hero__lines" data-enter="2">
+            <span class="strong" data-i18n="hero.disciplines">Identidade / Editorial / Digital</span>
+            <span data-i18n="hero.who">Marina · Brasil</span>
+          </p>
+        </div>
+
+        <div class="hero__foot" data-enter="3">
+          <span class="scroll-cue" aria-hidden="true"><span class="scroll-cue__dot"></span></span>
+          <span data-i18n="hero.since">Desde 2026</span>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS (Aki-style horizontal gallery) ============ -->
+      <section class="works" id="work" aria-labelledby="work-label">
+        <div class="works__top" data-reveal>
+          <span id="work-label" data-i18n="sections.workLeft">Trabalhos</span>
+          <span data-i18n="sections.workRight">Selecionados</span>
+        </div>
+
+        <div class="works-gallery" data-gallery data-reveal>
+          <ul class="works-track" data-gallery-track tabindex="0"
+              aria-label="Galeria de trabalhos, role horizontalmente">
+            <li class="work-panel">
+              <a class="work-panel__link" href="projects/afora-arquitetura.html"
+                 aria-label="Afora Arquitetura, Identidade Visual, 2026">
+                <header class="work-panel__bar">
+                  <span class="work-panel__name">Afora Arquitetura</span>
+                  <span class="work-panel__cat" data-i18n="projects.visualIdentity">Identidade Visual</span>
+                </header>
+                <figure class="work-panel__img">
+                  <img src="https://picsum.photos/seed/mari-afora-featured/1400/820?grayscale" alt="Afora Arquitetura, Identidade Visual" loading="lazy" />
+                </figure>
+              </a>
+            </li>
+
+            <li class="work-panel">
+              <a class="work-panel__link" href="projects/lilt-cafeteria.html"
+                 aria-label="Lilt Cafeteria, Identidade Visual, 2026">
+                <header class="work-panel__bar">
+                  <span class="work-panel__name">Lilt Cafeteria</span>
+                  <span class="work-panel__cat" data-i18n="projects.visualIdentity">Identidade Visual</span>
+                </header>
+                <figure class="work-panel__img">
+                  <img src="https://picsum.photos/seed/mari-lilt-featured/1400/820?grayscale" alt="Lilt Cafeteria, Identidade Visual" loading="lazy" />
+                </figure>
+              </a>
+            </li>
+
+            <li class="work-panel">
+              <a class="work-panel__link" href="projects/helena-prado-psicologa.html"
+                 aria-label="Helena Prado Psicóloga, Identidade Visual, 2026">
+                <header class="work-panel__bar">
+                  <span class="work-panel__name">Helena Prado Psicóloga</span>
+                  <span class="work-panel__cat" data-i18n="projects.visualIdentity">Identidade Visual</span>
+                </header>
+                <figure class="work-panel__img">
+                  <img src="https://picsum.photos/seed/mari-helena-featured/1400/820?grayscale" alt="Helena Prado Psicóloga, Identidade Visual" loading="lazy" />
+                </figure>
+              </a>
+            </li>
+          </ul>
+
+          <div class="works-nav">
+            <button type="button" class="works-nav__btn" data-gallery-prev aria-label="Anterior">
+              <svg viewBox="0 0 48 8" fill="none" aria-hidden="true"><path d="M0 4h46M4 1 1 4l3 3" stroke="currentColor" stroke-width="1"/></svg>
+            </button>
+            <button type="button" class="works-nav__btn" data-gallery-next aria-label="Próximo">
+              <svg viewBox="0 0 48 8" fill="none" aria-hidden="true"><path d="M2 4h46M44 1l3 3-3 3" stroke="currentColor" stroke-width="1"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section about wrap" id="about" aria-labelledby="about-label">
+        <div class="about__inner">
+          <p class="about__label" id="about-label" data-reveal>
+            <span class="paren">(</span>
+            <span data-i18n="sections.about">Sobre</span>
+            <span class="paren">)</span>
+          </p>
+          <div class="about__body" data-reveal>
+            <p data-i18n="about.p1">
+              Sou a Marina, designer. Formada em Design e em Direito, com mestrado. Atuei na advocacia, mas escolhi o design.
+            </p>
+            <p data-i18n="about.p2">
+              Trabalhei alguns anos em agência e, em 2026, passei a trabalhar sozinha, cuidando de cada projeto do início ao fim. Nas horas vagas: música, viagens, shows e comida boa.
+            </p>
+            <p class="about__signature" data-i18n="about.signature">
+              Marina, Diretora Criativa
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer wrap" id="contact">
+      <div class="footer__grid">
+        <div class="footer__lead">
+          <p class="footer__prompt" data-word-reveal data-i18n="footer.prompt">
+            Tem um projeto em mente? Adoraria ouvir sua ideia.
+          </p>
+          <div class="footer__contact">
+            <a class="footer__email underline-link" href="mailto:hello@maridesignco.com">hello@maridesignco.com</a>
+            <a class="footer__ig underline-link" href="https://instagram.com/maridesignco" target="_blank" rel="noopener">@maridesignco</a>
+          </div>
+        </div>
+
+        <div class="studio-status" data-studio-status>
+          <p class="studio-status__place">
+            <span data-i18n="footer.location">Mato Grosso, Brasil</span>
+            <span class="studio-status__sep" aria-hidden="true">•</span>
+            <time class="studio-status__clock" data-studio-clock aria-live="off">--:--:--</time>
+          </p>
+          <p class="studio-status__weather" data-studio-weather hidden>
+            <span data-studio-temp></span>
+            <span data-studio-cond></span>
+            <span class="studio-status__icon" data-studio-icon aria-hidden="true"></span>
+          </p>
+          <p class="studio-status__pill" data-studio-office>
+            <span class="studio-status__dot" data-studio-dot aria-hidden="true"></span>
+            <span data-studio-office-text></span>
+          </p>
+          <p class="studio-status__tag">
+            <span class="studio-status__heart" aria-hidden="true">
+              <svg viewBox="0 0 256 256" fill="currentColor"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,127.11,108.21,129.51a8,8,0,0,0,7.58,0C136.21,229.11,240,172,240,102A62.07,62.07,0,0,0,178,40Zm-50,175.3C109.74,204.55,32,155.68,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.68,146.26,204.55,128,215.3Z"/></svg>
+            </span>
+            <span data-i18n="footer.tagline">Amor pelo Design e Criatividade</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__baseline">
+        <p class="footer__copy" data-i18n="footer.rights">© 2026 Mari Design Co., Todos os direitos reservados</p>
+        <a class="footer__top underline-link" href="#main" data-back-to-top data-i18n="footer.backTop">Voltar ao topo</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
