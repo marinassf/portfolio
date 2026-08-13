@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing — Mari Design Co.</title>
+    <meta name="description" content="Requisição de projeto. Preencha o briefing e receba uma proposta. Mari Design Co.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Briefing — Mari Design Co.">
+    <meta property="og:description" content="Requisição de projeto. Preencha o briefing e receba uma proposta.">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' text-anchor='middle' fill='%230a0a0a'%3EM%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="specks"></div>
+    <div class="noise"></div>
+
+    <header id="site-header">
+        <div class="header-left">
+            <a href="index.html" class="logo">MARI DESIGN CO.</a>
+            <span class="mono muted desktop-only">FILE_005_B</span>
+        </div>
+        <nav class="header-center" id="main-nav">
+            <a href="index.html#work" data-i18n="nav.work">TRABALHOS</a>
+            <a href="services.html" data-i18n="nav.services">SERVIÇOS</a>
+            <a href="index.html#about" data-i18n="nav.about">SOBRE</a>
+            <a href="#footer" data-i18n="nav.contact">CONTATO</a>
+        </nav>
+        <div class="header-right">
+            <button id="nav-toggle" class="mono" aria-expanded="false" aria-controls="main-nav"
+                data-i18n="nav.menu">[ MENU ]</button>
+            <a href="index.html" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
+            <button id="lang-toggle" class="mono" aria-label="Toggle Language">PT / EN</button>
+        </div>
+    </header>
+
+    <main class="briefing-page">
+
+        <section class="page-hero observe">
+            <span class="page-hero-label" data-i18n="briefing.header">[ REQUISIÇÃO DE PROJETO ]</span>
+
+            <h1 class="page-title" data-i18n="briefing.title">BRIEFING</h1>
+
+            <p class="page-hero-text mono" data-i18n="briefing.intro">
+                POR FAVOR, PREENCHA OS CAMPOS ABAIXO COM O MÁXIMO DE DETALHES.<br>
+                ISSO NOS AJUDARÁ A ENTENDER O ESCOPO E RETORNAR COM UMA PROPOSTA PRECISA.
+            </p>
+
+            <span class="caption" data-i18n="briefing.caption">Resposta em até 2 dias úteis</span>
+        </section>
+
+        <section class="raw-section observe">
+            <div class="form-container">
+
+                <!-- WEB3FORMS INTEGRATION -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="archival-form mono">
+
+                    <input type="hidden" name="access_key" value="a06bb7ff-964b-4f62-8842-6cccc54767f6">
+                    <input type="hidden" name="redirect" value="https://maridesign.co/">
+                    <input type="hidden" name="subject" value="NOVA REQUISIÇÃO DE PROJETO - MARI DESIGN CO.">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="name" data-i18n="briefing.name">NOME COMPLETO *</label>
+                            <input type="text" name="name" id="name" required placeholder="Ex: Marina Silva">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email" data-i18n="briefing.email">E-MAIL *</label>
+                            <input type="email" name="email" id="email" required placeholder="Ex: hello@empresa.com">
+                        </div>
+
+                        <div class="input-group full-width">
+                            <label for="company" data-i18n="briefing.company">EMPRESA / MARCA</label>
+                            <input type="text" name="company" id="company" placeholder="Qual o nome do projeto?">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="service" data-i18n="briefing.service">SERVIÇO DE INTERESSE *</label>
+                            <select name="service" id="service" required>
+                                <option value="" disabled selected data-i18n="briefing.service_opt1">[ SELECIONE ]
+                                </option>
+                                <option value="ID Visual Essencial" data-i18n="briefing.service_opt2">ID VISUAL
+                                    ESSENCIAL</option>
+                                <option value="ID Visual Gastronomia" data-i18n="briefing.service_opt3">ID VISUAL
+                                    GASTRONOMIA</option>
+                                <option value="Projeto Editorial/Impresso" data-i18n="briefing.service_opt4">PROJETO
+                                    EDITORIAL / IMPRESSO</option>
+                                <option value="Projeto Digital/UI" data-i18n="briefing.service_opt5">PROJETO DIGITAL /
+                                    UI</option>
+                                <option value="Outros / Sob Medida" data-i18n="briefing.service_opt6">OUTROS / PROJETO
+                                    SOB MEDIDA</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="budget" data-i18n="briefing.budget">ORÇAMENTO DISPONÍVEL</label>
+                            <select name="budget" id="budget">
+                                <option value="" disabled selected data-i18n="briefing.service_opt1">[ SELECIONE ]
+                                </option>
+                                <option value="Menos de 5k">ABAIXO DE R$ 5.000</option>
+                                <option value="5k a 10k">R$ 5.000 — R$ 10.000</option>
+                                <option value="Acima de 10k">ACIMA DE R$ 10.000</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <label for="message" data-i18n="briefing.message">SOBRE O PROJETO *</label>
+                            <textarea name="message" id="message" rows="5" required
+                                placeholder="Descreva brevemente o que você precisa, quais são os objetivos, referências e prazos..."
+                                data-i18n-placeholder="briefing.msg_ph"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-submit-wrapper">
+                        <button type="submit" class="giant-submit-btn">
+                            <span data-i18n="briefing.submit">[ ENVIAR_FICHA ]</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER REDUZIDO -->
+    <footer id="footer" class="footer-reduced observe">
+        <div class="footer-bottom">
+            <div class="footer-widget">
+                <div class="widget-time">
+                    <span data-i18n="footer.widget.city">Brasil</span> &bull; <span id="live-clock">16:00:00</span>
+                </div>
+
+                <div class="office-status mono">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">EST&Uacute;DIO ABERTO</span>
+                </div>
+            </div>
+
+            <div class="footer-links-wrapper mono">
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener">IG</a>
+                    <a href="#" target="_blank" rel="noopener">BE</a>
+                    <a href="mailto:hello@maridesign.co">MAIL</a>
+                </div>
+                <div class="copyright muted">
+                    <span>&copy; 2026 MARI DESIGN CO.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
