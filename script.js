@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================= */
     const translations = {
         pt: {
-            "nav.briefing": "BRIEFING",
             "nav.menu": "[ MENU ]",
             "nav.close": "[ FECHAR ]",
             "nav.work": "TRABALHOS",
@@ -24,25 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
             "work.cap.lilt": "Gastronomia / Curitiba",
             "work.cap.helena": "Psicologia / Belo Horizonte",
             "about.doc": "DOCUMENTAÇÃO",
-            "about.row.name": "NOME",
-            "about.row.field": "ÁREA",
-            "about.row.based": "BASE",
-            "about.row.status": "STATUS",
-            "about.status.value": "DISPONÍVEL",
-            "about.field.value": "DESIGN GRÁFICO",
-            "about.caption": "Direção de arte e sistemas visuais",
+            "about.portrait.cap": "Direção de arte",
+            "about.portrait.hint": "FOTO 3&times;4<br>assets/foto-marina.jpg",
             "footer.widget.tag": "ESTÚDIO DE DESIGN GRÁFICO<br>DESDE 2026.",
-            "services.caption": "Pacotes e add-ons / 2026",
+            "services.caption": "Pacotes e serviços avulsos / 2026",
             "services.sec1": "[01] IDENTIDADE VISUAL",
             "services.sec1.tag": "PACOTES",
-            "services.sec2": "[02] ADD-ONS",
-            "services.sec2.tag": "AVULSOS",
+            "services.sec2": "[02] SERVIÇOS AVULSOS",
+            "services.sec2.tag": "INDIVIDUAIS OU COMBINADOS",
             "services.sec3": "[03] PROCESSO",
             "services.sec3.tag": "FLUXO DE TRABALHO",
             "services.sec4": "[04] PERGUNTAS",
             "services.sec4.tag": "DÚVIDAS FREQUENTES",
-            "services.pkg1.cap": "Sistema base",
-            "services.pkg2.cap": "Sistema ampliado",
+            "services.pkg1.cap": "Sistema completo de marca",
+            "services.pkg2.cap": "Solução para restaurantes",
             "services.note": "NOTA",
             "proj.meta.client": "CLIENTE",
             "proj.meta.services": "SERVIÇOS",
@@ -73,17 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "hero.label": "( ESTÚDIO DE DESIGN )",
             "hero.manifesto": "DESIGN GRÁFICO PARA IDEIAS QUE PEDEM FORMA, CLAREZA E PERSONALIDADE —<br>ENTRE IDENTIDADE, EDITORIAL, IMPRESSO E DIGITAL.",
             "hero.location": "BRASIL / WORLDWIDE",
-            "hero.country": "BRASIL",
-            "hero.sub": "Estúdio independente / Desde 2026",
             "work.title": "[01] TRABALHOS SELECIONADOS",
-            "work.view": "VER PROJETO →",
             "about.title": "[02] SOBRE",
-            "about.text": "Trabalho entre identidade visual, editorial, impresso e digital, construindo sistemas visuais claros, consistentes e com personalidade.",
+            "about.text": "Me chamo Marina, sou a designer por trás da Mari Design Co. Trabalho entre identidade, editorial, impresso e digital, criando sistemas visuais que dão forma, ritmo e personalidade a cada projeto.",
+            "about.text2": "Meu processo mistura repertório, estratégia e intuição. Sem fórmulas prontas ou uma estética única para tudo. A ideia é encontrar uma linguagem que pareça própria, faça sentido e continue interessante depois do primeiro impacto.",
             "footer.headline": "VAMOS CRIAR<br>ALGO JUNTOS.",
-            "footer.headline.services": "NÃO ENCONTROU<br>O QUE PROCURAVA?",
             "footer.cta.services": "[ PROJETO SOB MEDIDA ⟶ ]",
             "footer.widget.city": "Brasil",
-            "footer.widget.weather": "28°C Limpo",
             "footer.status.open": "ESTÚDIO ABERTO: ON-LINE",
             "footer.status.closed": "ESTÚDIO FECHADO: VOLTAMOS ÀS {time}",
             "project.afora.desc": "A Afora é um escritório de arquitetura focado em integrar espaços internos e externos com fluidez. O desafio foi criar uma identidade visual que transmitisse solidez estrutural e, ao mesmo tempo, respiro e espaço negativo. O sistema visual baseia-se em grids rígidos contrastados por tipografia leve e arejada.",
@@ -97,23 +87,24 @@ document.addEventListener('DOMContentLoaded', () => {
             "services.giant2": "VISUAIS",
             "services.intro.raw": "NÓS NÃO FAZEMOS APENAS LOGOTIPOS.<br>CONSTRUÍMOS SISTEMAS ESCALÁVEIS.<br>GRID. TIPOGRAFIA. CONTRASTE.<br>TUDO INTENCIONAL.<br>NADA SUPÉRFLUO.",
             "services.pkg.btn": "[ INICIAR PROJETO ⟶ ]",
-            "services.pkg1.name": "ID VISUAL ESSENCIAL",
-            "services.pkg1.desc": "Sistema base para clareza e posicionamento.",
-            "services.pkg1.item1": "+ ESTRATÉGIA E POSICIONAMENTO",
-            "services.pkg1.item2": "+ LOGOTIPO PRIMÁRIO E SECUNDÁRIO",
-            "services.pkg1.item3": "+ DIREÇÃO TIPOGRÁFICA E CORES",
-            "services.pkg1.item4": "+ BRANDBOOK / MANUAL DA MARCA",
-            "services.pkg1.item5": "+ APLICAÇÕES BÁSICAS (MOCKUPS)",
-            "services.pkg2.name": "GASTRONOMIA",
-            "services.pkg2.desc": "Focado em PDV, cafés e restaurantes.",
-            "services.pkg2.item1": "[ TUDO DO 0.1 + ADIÇÕES ABAIXO ]",
-            "services.pkg2.item2": "+ DESIGN DE CARDÁPIO (FÍSICO/DIGITAL)",
-            "services.pkg2.item3": "+ EMBALAGENS E TAKEAWAY",
-            "services.pkg2.item4": "+ UNIFORMES E AVENTAIS",
-            "services.pkg2.item5": "+ SINALIZAÇÃO INTERNA E EXTERNA",
-            "services.addon1.raw": "FOCO ABSOLUTO NO CONFORTO<br>DA LEITURA E GRID RIGOROSO.<br>- LIVROS E REVISTAS<br>- RELATÓRIOS E MANUAIS<br>- ZINES E IMPRESSOS",
-            "services.addon2.raw": "A IDENTIDADE VISUAL<br>PARA MATERIAIS TATEÁVEIS.<br>- CARTAZES E POSTERS<br>- PAPELARIA CORPORATIVA<br>- EMBALAGENS CUSTOMIZADAS",
-            "services.addon3.raw": "A PRESENÇA DA MARCA<br>NOS ECOSSISTEMAS DIGITAIS.<br>- INTERFACE UI/UX<br>- LANDING PAGES<br>- TEMPLATES SOCIAIS",
+            "services.pkg1.name": "IDENTIDADE VISUAL",
+            "services.pkg1.item1": "+ DIREÇÃO ESTRATÉGICA E CONCEITO DA MARCA",
+            "services.pkg1.item2": "+ SISTEMA DE LOGOTIPO E VARIAÇÕES",
+            "services.pkg1.item3": "+ PALETA DE CORES",
+            "services.pkg1.item4": "+ SISTEMA TIPOGRÁFICO",
+            "services.pkg1.item5": "+ ELEMENTOS GRÁFICOS DE APOIO",
+            "services.pkg2.name": "IDENTIDADE PARA GASTRONOMIA",
+            "services.pkg2.item1": "+ MENU OU CARDÁPIO",
+            "services.pkg2.item2": "+ EMBALAGEM PRINCIPAL",
+            "services.pkg2.item3": "+ RÓTULO, SELO OU ADESIVO",
+            "services.pkg2.item4": "+ PAPELARIA ESSENCIAL",
+            "services.pkg2.item5": "+ MATERIAL DIGITAL DE LANÇAMENTO",
+            "services.addon1.tag": "IMPRESSO",
+            "services.addon2.tag": "DIGITAL",
+            "services.addon3.tag": "EDITORIAL",
+            "services.addon1.raw": "- CARTÃO DE VISITA<br>- PAPEL TIMBRADO<br>- PAPELARIA CORPORATIVA<br>- FOLDER E MATERIAIS PROMOCIONAIS<br>- POSTERS E CARTAZES<br>- EMBALAGENS<br>- RÓTULOS<br>- MENUS E CARDÁPIOS",
+            "services.addon2.raw": "- ASSINATURA DE E-MAIL<br>- TEMPLATES PARA REDES SOCIAIS<br>- BANNERS DIGITAIS<br>- APRESENTAÇÕES<br>- LANDING PAGES",
+            "services.addon3.raw": "- LIVROS<br>- REVISTAS<br>- CATÁLOGOS<br>- RELATÓRIOS<br>- MANUAIS",
             "services.proc.1a": "DESCOBERTA", "services.proc.1b": "PESQUISA",
             "services.proc.2a": "ESTRATÉGIA", "services.proc.2b": "DIREÇÃO",
             "services.proc.3a": "DESIGN",     "services.proc.3b": "SISTEMA",
@@ -130,28 +121,150 @@ document.addEventListener('DOMContentLoaded', () => {
             "services.faq3.q": "CONDIÇÕES DE PAGAMENTO?",
             "services.faq3.a": "50% SINAL PARA RESERVA DE AGENDA, 50% NA ENTREGA FINAL DOS ARQUIVOS.",
             "services.footer.question": "Não encontrou o que precisava?",
-            "services.footer.action": "PROJETO SOB MEDIDA",
 
             // Formulário de Briefing
             "briefing.header": "[ REQUISIÇÃO DE PROJETO ]",
             "briefing.intro": "POR FAVOR, PREENCHA OS CAMPOS ABAIXO COM O MÁXIMO DE DETALHES.<br>ISSO NOS AJUDARÁ A ENTENDER O ESCOPO E RETORNAR COM UMA PROPOSTA PRECISA.",
-            "briefing.name": "NOME COMPLETO *",
-            "briefing.email": "E-MAIL *",
-            "briefing.company": "EMPRESA / MARCA",
-            "briefing.service": "SERVIÇO DE INTERESSE *",
-            "briefing.service_opt1": "[ SELECIONE ]",
-            "briefing.service_opt2": "ID VISUAL ESSENCIAL",
-            "briefing.service_opt3": "ID VISUAL GASTRONOMIA",
-            "briefing.service_opt4": "PROJETO EDITORIAL / IMPRESSO",
-            "briefing.service_opt5": "PROJETO DIGITAL / UI",
-            "briefing.service_opt6": "OUTROS / PROJETO SOB MEDIDA",
-            "briefing.budget": "ORÇAMENTO DISPONÍVEL",
-            "briefing.message": "SOBRE O PROJETO *",
-            "briefing.msg_ph": "Descreva brevemente o que você precisa, quais são os objetivos, referências e prazos...",
-            "briefing.submit": "[ ENVIAR_FICHA ]"
+            "briefing.submit": "[ ENVIAR_FICHA ]",
+
+            // pré-briefing
+            "bf.s1": "01 — DADOS INICIAIS",
+            "bf.s2": "02 — SERVIÇO",
+            "bf.s3": "03 — SOBRE O PROJETO",
+            "bf.s4": "04 — CONTEXTO, PRAZO E INVESTIMENTO",
+            "bf.s5": "05 — FINAL",
+            "bf.nome": "NOME *",
+            "bf.email": "E-MAIL *",
+            "bf.marca": "NOME DA MARCA OU EMPRESA *",
+            "bf.semnome": "AINDA NÃO TENHO NOME DEFINIDO",
+            "bf.site": "SITE OU INSTAGRAM",
+            "bf.local": "ONDE SUA MARCA ESTÁ LOCALIZADA?",
+            "bf.local.ph": "Cidade e país",
+            "bf.servico": "O QUE VOCÊ ESTÁ BUSCANDO? *",
+            "bf.sel": "[ SELECIONE ]",
+            "bf.sv.id": "IDENTIDADE VISUAL",
+            "bf.sv.gastro": "IDENTIDADE PARA GASTRONOMIA",
+            "bf.sv.imp": "MATERIAL IMPRESSO",
+            "bf.sv.dig": "MATERIAL DIGITAL",
+            "bf.sv.edit": "PROJETO EDITORIAL",
+            "bf.sv.naosei": "AINDA NÃO SEI EXATAMENTE DO QUE PRECISO",
+            "bf.id.momento": "EM QUAL MOMENTO SUA MARCA ESTÁ? *",
+            "bf.id.m1": "É UMA MARCA NOVA, AINDA EM CONSTRUÇÃO",
+            "bf.id.m2": "JÁ EXISTE, MAS NUNCA TEVE UMA IDENTIDADE PROFISSIONAL",
+            "bf.id.m3": "JÁ POSSUI IDENTIDADE, MAS PRECISA SER REFORMULADA",
+            "bf.id.m4": "A MARCA MUDOU E A IDENTIDADE ATUAL NÃO REPRESENTA MAIS O NEGÓCIO",
+            "bf.id.motivacao": "O QUE MOTIVOU VOCÊ A BUSCAR UMA IDENTIDADE VISUAL AGORA? *",
+            "bf.id.sobre": "CONTE BREVEMENTE SOBRE A MARCA E O QUE ELA OFERECE. *",
+            "bf.id.atual": "EXISTE UMA IDENTIDADE VISUAL ATUALMENTE? *",
+            "bf.sim": "SIM",
+            "bf.nao": "NÃO",
+            "bf.id.a3": "ESTÁ EM DESENVOLVIMENTO",
+            "bf.id.problema": "O QUE VOCÊ SENTE QUE NÃO FUNCIONA NA IDENTIDADE ATUAL?",
+            "bf.ga.tipo": "QUAL É O TIPO DE NEGÓCIO? *",
+            "bf.ga.t1": "RESTAURANTE",
+            "bf.ga.t2": "CAFÉ / CAFETERIA",
+            "bf.ga.t3": "BAR",
+            "bf.ga.t4": "PADARIA / CONFEITARIA",
+            "bf.ga.t5": "DELIVERY",
+            "bf.ga.t6": "PRODUTO ALIMENTÍCIO",
+            "bf.outro": "OUTRO",
+            "bf.especifique": "QUAL?",
+            "bf.ga.momento": "EM QUAL MOMENTO O NEGÓCIO ESTÁ? *",
+            "bf.ga.m1": "AINDA SERÁ LANÇADO",
+            "bf.ga.m2": "ESTÁ EM FASE DE LANÇAMENTO",
+            "bf.ga.m3": "JÁ ESTÁ FUNCIONANDO",
+            "bf.ga.m4": "JÁ EXISTE E ESTÁ PASSANDO POR UMA REFORMULAÇÃO",
+            "bf.ga.sobre": "CONTE BREVEMENTE SOBRE O NEGÓCIO. *",
+            "bf.ga.materiais": "ALÉM DA IDENTIDADE VISUAL, QUAIS MATERIAIS VOCÊ IMAGINA PRECISAR?",
+            "bf.ga.mat1": "MENU / CARDÁPIO",
+            "bf.ga.mat2": "EMBALAGEM",
+            "bf.ga.mat3": "RÓTULO / ADESIVO",
+            "bf.ga.mat4": "PAPELARIA",
+            "bf.ga.mat5": "MATERIAIS DIGITAIS",
+            "bf.naosei": "AINDA NÃO SEI",
+            "bf.ga.help": "Não precisa definir tudo agora.",
+            "bf.imp.material": "QUE MATERIAL VOCÊ PRECISA?",
+            "bf.imp.m1": "CARTÃO DE VISITA",
+            "bf.imp.m2": "PAPEL TIMBRADO",
+            "bf.imp.m3": "PAPELARIA CORPORATIVA",
+            "bf.imp.m4": "FOLDER",
+            "bf.imp.m5": "CARTAZ / POSTER",
+            "bf.imp.m6": "EMBALAGEM",
+            "bf.imp.m7": "RÓTULO",
+            "bf.imp.m8": "MENU / CARDÁPIO",
+            "bf.temid": "SUA MARCA JÁ POSSUI IDENTIDADE VISUAL DEFINIDA? *",
+            "bf.parcial": "PARCIALMENTE",
+            "bf.imp.conteudo": "VOCÊ JÁ POSSUI O CONTEÚDO QUE ENTRARÁ NA PEÇA? *",
+            "bf.imp.c1": "SIM, ESTÁ TUDO PRONTO",
+            "bf.imp.c2": "TENHO PARTE DO CONTEÚDO",
+            "bf.imp.c3": "AINDA NÃO",
+            "bf.imp.gráfica": "JÁ POSSUI GRÁFICA OU FORNECEDOR DEFINIDO? *",
+            "bf.pesquisando": "AINDA ESTOU PESQUISANDO",
+            "bf.dig.material": "QUE MATERIAL VOCÊ PRECISA?",
+            "bf.dig.m1": "ASSINATURA DE E-MAIL",
+            "bf.dig.m2": "TEMPLATES PARA REDES SOCIAIS",
+            "bf.dig.m3": "BANNER DIGITAL",
+            "bf.dig.m4": "APRESENTAÇÃO",
+            "bf.dig.m5": "LANDING PAGE",
+            "bf.dig.conteudo": "VOCÊ JÁ POSSUI OS CONTEÚDOS NECESSÁRIOS? *",
+            "bf.ed.tipo": "QUE TIPO DE PROJETO VOCÊ PRECISA? *",
+            "bf.ed.t1": "LIVRO",
+            "bf.ed.t2": "REVISTA",
+            "bf.ed.t3": "CATÁLOGO",
+            "bf.ed.t4": "RELATÓRIO",
+            "bf.ed.t5": "MANUAL",
+            "bf.ed.t6": "ZINE / PUBLICAÇÃO",
+            "bf.ed.conteudo": "O CONTEÚDO JÁ ESTÁ FINALIZADO? *",
+            "bf.ed.c2": "ESTÁ EM FASE FINAL",
+            "bf.ed.c3": "AINDA ESTÁ SENDO PRODUZIDO",
+            "bf.ed.sabepag": "VOCÊ JÁ SABE APROXIMADAMENTE QUANTAS PÁGINAS TERÁ? *",
+            "bf.ed.paginas": "QUANTAS PÁGINAS APROXIMADAMENTE?",
+            "bf.ed.formato": "O PROJETO SERÁ: *",
+            "bf.ed.f1": "DIGITAL",
+            "bf.ed.f2": "IMPRESSO",
+            "bf.ed.f3": "DIGITAL E IMPRESSO",
+            "bf.ns.sobre": "CONTE BREVEMENTE SOBRE SUA MARCA OU PROJETO. *",
+            "bf.ns.resolver": "O QUE VOCÊ GOSTARIA DE RESOLVER OU MELHORAR NESTE MOMENTO? *",
+            "bf.ns.agora": "O QUE FEZ VOCÊ PROCURAR UMA DESIGNER AGORA?",
+            "bf.objetivo": "QUAL É O PRINCIPAL OBJETIVO DESTE PROJETO? *",
+            "bf.objetivo.help": "Pode ser lançar uma marca, reposicionar um negócio, profissionalizar a comunicação, desenvolver um material específico ou preparar um lançamento.",
+            "bf.inicio": "QUANDO VOCÊ GOSTARIA DE INICIAR? *",
+            "bf.in1": "O QUANTO ANTES",
+            "bf.in2": "NAS PRÓXIMAS 2–4 SEMANAS",
+            "bf.in3": "NOS PRÓXIMOS 1–2 MESES",
+            "bf.in4": "DAQUI A MAIS DE 2 MESES",
+            "bf.temdata": "EXISTE ALGUMA DATA IMPORTANTE PARA O PROJETO ESTAR PRONTO? *",
+            "bf.data": "QUAL É A DATA?",
+            "bf.motivodata": "EXISTE ALGUM LANÇAMENTO, EVENTO OU MOTIVO RELACIONADO A ESSA DATA?",
+            "bf.investimento": "VOCÊ JÁ DEFINIU UMA FAIXA DE INVESTIMENTO PARA ESTE PROJETO? *",
+            "bf.iv1": "ATÉ R$ 1.500",
+            "bf.iv2": "R$ 1.500 — R$ 2.500",
+            "bf.iv3": "R$ 2.500 — R$ 4.000",
+            "bf.iv4": "R$ 4.000 — R$ 6.000",
+            "bf.iv5": "ACIMA DE R$ 6.000",
+            "bf.iv6": "AINDA NÃO DEFINI / GOSTARIA DE RECEBER UMA ORIENTAÇÃO",
+            "bf.origem": "COMO VOCÊ CONHECEU MEU TRABALHO?",
+            "bf.or1": "INSTAGRAM",
+            "bf.or2": "BEHANCE",
+            "bf.or3": "GOOGLE",
+            "bf.or4": "PINTEREST",
+            "bf.or5": "INDICAÇÃO",
+            "bf.obs": "TEM MAIS ALGUMA COISA QUE VOCÊ ACHA IMPORTANTE EU SABER NESTE PRIMEIRO MOMENTO?",
+            "bf.disclaimer": "Essas informações são apenas um primeiro contato para eu entender seu projeto. Caso a gente siga juntos, você receberá um briefing mais aprofundado antes do início do processo criativo.",
+            "bf.enviando": "ENVIANDO…",
+            "bf.sucesso": "RECEBIDO. RESPONDO EM ATÉ 2 DIAS ÚTEIS.",
+            "bf.erro": "NÃO FOI POSSÍVEL ENVIAR. TENTE DE NOVO OU ESCREVA PARA HELLO@MARIDESIGN.CO",
+            "services.avulsos.intro": "PEÇAS E MATERIAIS PARA MARCAS EM DIFERENTES MOMENTOS.<br>PODEM SER CONTRATADOS INDIVIDUALMENTE OU ADICIONADOS A UM PROJETO DE IDENTIDADE VISUAL.",
+            "services.pkg1.item6": "+ APRESENTAÇÃO DA IDENTIDADE VISUAL",
+            "services.pkg1.item7": "+ MANUAL DE MARCA",
+            "services.pkg1.item8": "+ ARQUIVOS FINAIS PARA USO DIGITAL E IMPRESSO",
+            "services.pkg1.formats": "Formatos entregues: AI · EPS · SVG · PDF · PNG · JPG",
+            "services.pkg1.note": "Serviços impressos, digitais e editoriais podem ser adicionados ao projeto conforme a necessidade da marca.",
+            "services.pkg2.item0": "[ INCLUI TUDO DA IDENTIDADE VISUAL + ]",
+            "services.pkg2.item6": "+ ARQUIVOS FINAIS PREPARADOS PARA PRODUÇÃO",
+            "services.pkg2.note": "Outros materiais podem ser incluídos conforme a necessidade do projeto."
         },
         en: {
-            "nav.briefing": "BRIEFING",
             "nav.menu": "[ MENU ]",
             "nav.close": "[ CLOSE ]",
             "nav.work": "WORK",
@@ -163,28 +276,23 @@ document.addEventListener('DOMContentLoaded', () => {
             "work.ref": "REF.001—003",
             "work.cat.id": "VISUAL IDENTITY",
             "work.cap.afora": "Architecture / São Paulo",
-            "work.cap.lilt": "Gastronomy / Curitiba",
+            "work.cap.lilt": "Food & Drink / Curitiba",
             "work.cap.helena": "Psychology / Belo Horizonte",
             "about.doc": "DOCUMENTATION",
-            "about.row.name": "NAME",
-            "about.row.field": "FIELD",
-            "about.row.based": "BASED",
-            "about.row.status": "STATUS",
-            "about.status.value": "AVAILABLE",
-            "about.field.value": "GRAPHIC DESIGN",
-            "about.caption": "Art Direction & Visual Systems",
+            "about.portrait.cap": "Art Direction",
+            "about.portrait.hint": "3&times;4 PHOTO<br>assets/foto-marina.jpg",
             "footer.widget.tag": "GRAPHIC DESIGN STUDIO<br>SINCE 2026.",
-            "services.caption": "Packages & Add-ons / 2026",
+            "services.caption": "Packages & standalone services / 2026",
             "services.sec1": "[01] VISUAL IDENTITY",
             "services.sec1.tag": "PACKAGES",
-            "services.sec2": "[02] ADD-ONS",
-            "services.sec2.tag": "EXTRAS",
+            "services.sec2": "[02] STANDALONE SERVICES",
+            "services.sec2.tag": "INDIVIDUAL OR COMBINED",
             "services.sec3": "[03] PROCESS",
             "services.sec3.tag": "WORKFLOW",
             "services.sec4": "[04] QUESTIONS",
             "services.sec4.tag": "Q&amp;A",
-            "services.pkg1.cap": "Core System",
-            "services.pkg2.cap": "Expanded System",
+            "services.pkg1.cap": "Complete brand system",
+            "services.pkg2.cap": "Solution for restaurants",
             "services.note": "NOTE",
             "proj.meta.client": "CLIENT",
             "proj.meta.services": "SERVICES",
@@ -194,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "proj.afora.cap": "Architecture Studio / 2026",
             "proj.afora.services": "VISUAL IDENTITY",
             "proj.lilt.kicker": "0.2 &nbsp; VISUAL IDENTITY / PACKAGING",
-            "proj.lilt.cap": "Gastronomy / 2026",
+            "proj.lilt.cap": "Food & Drink / 2026",
             "proj.lilt.services": "ID / PACKAGING / SIGNAGE",
             "proj.helena.kicker": "0.3 &nbsp; VISUAL IDENTITY / EDITORIAL",
             "proj.helena.cap": "Clinical Psychology / 2026",
@@ -215,21 +323,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "hero.label": "( DESIGN STUDIO )",
             "hero.manifesto": "GRAPHIC DESIGN FOR IDEAS THAT DEMAND FORM, CLARITY, AND PERSONALITY —<br>ACROSS IDENTITY, EDITORIAL, PRINT, AND DIGITAL.",
             "hero.location": "BRAZIL / WORLDWIDE",
-            "hero.country": "BRAZIL",
-            "hero.sub": "Independent Studio / Est. 2026",
             "work.title": "[01] SELECTED WORK",
-            "work.view": "VIEW PROJECT →",
             "about.title": "[02] ABOUT",
-            "about.text": "I work across visual identity, editorial, print, and digital, building clear, consistent visual systems with personality.",
-            "footer.headline": "LET'S WORK<br>TOGETHER.",
-            "footer.headline.services": "DIDN'T FIND<br>WHAT YOU NEEDED?",
+            "about.text": "I\u2019m Marina, the designer behind Mari Design Co. I work across identity, editorial, print, and digital, building visual systems that give each project form, rhythm, and personality.",
+            "about.text2": "My process mixes references, strategy, and instinct. No ready-made formulas, no single look applied to everything. The goal is to find a language that feels like its own, makes sense, and still holds up after the first impression.",
+            "footer.headline": "LET\u2019S CREATE<br>SOMETHING TOGETHER.",
             "footer.cta.services": "[ CUSTOM PROJECT ⟶ ]",
             "footer.widget.city": "Brazil",
-            "footer.widget.weather": "28°C Clear",
             "footer.status.open": "STUDIO OPEN: ONLINE",
             "footer.status.closed": "STUDIO CLOSED: BACK AT {time}",
             "project.afora.desc": "Afora is an architecture firm focused on seamlessly integrating indoor and outdoor spaces. The challenge was to create a visual identity that conveyed structural solidity while maintaining breathability and negative space. The visual system relies on rigid grids contrasted with light, airy typography.",
-            "project.lilt.desc": "Lilt is a neighbourhood coffee shop working with beans from small growers. The visual system came straight off the counter: handwritten labels, batch stamps and menus that change every week. We turned that into a mono type kit, a modular seal and one-colour kraft packaging — cheap to reprint and readable from three metres away.",
+            "project.lilt.desc": "Lilt is a neighborhood coffee shop working with beans from small growers. The visual system came straight off the counter: handwritten labels, batch stamps and menus that change every week. We turned that into a mono type kit, a modular seal and one-color kraft packaging — cheap to reprint and readable from three meters away.",
             "project.helena.desc": "Helena sees adult clients in her practice and online, and arrived with nothing but an Instagram profile. The identity had to feel welcoming without falling into the green-leaf-and-script cliché. We built a monogram from two curves that approach without touching, a calm editorial grid for long-form text, and a post kit she updates herself — all in a neutral two-tone palette.",
 
             // Raw Services Texts
@@ -237,60 +341,184 @@ document.addEventListener('DOMContentLoaded', () => {
             "briefing.title": "BRIEFING",
             "services.giant1": "VISUAL",
             "services.giant2": "SYSTEMS",
-            "services.intro.raw": "WE DON'T JUST MAKE LOGOS.<br>WE BUILD SYSTEMS THAT SCALE.<br>GRID. TYPE. CONTRAST.<br>EVERYTHING INTENTIONAL.<br>NOTHING SUPERFLUOUS.",
+            "services.intro.raw": "WE DON\u2019T JUST MAKE LOGOS.<br>WE BUILD SYSTEMS THAT SCALE.<br>GRID. TYPE. CONTRAST.<br>EVERYTHING INTENTIONAL.<br>NOTHING SUPERFLUOUS.",
             "services.pkg.btn": "[ START PROJECT ⟶ ]",
-            "services.pkg1.name": "ESSENTIAL VISUAL ID",
-            "services.pkg1.desc": "Core system for clarity and positioning.",
-            "services.pkg1.item1": "+ STRATEGY & POSITIONING",
-            "services.pkg1.item2": "+ PRIMARY & SECONDARY LOGO",
-            "services.pkg1.item3": "+ TYPOGRAPHIC & COLOR DIRECTION",
-            "services.pkg1.item4": "+ BRANDBOOK / GUIDELINES",
-            "services.pkg1.item5": "+ BASIC APPLICATIONS (MOCKUPS)",
-            "services.pkg2.name": "GASTRONOMY ID",
-            "services.pkg2.desc": "Focused on POS, cafes and restaurants.",
-            "services.pkg2.item1": "[ EVERYTHING IN 0.1 + ADDITIONS BELOW ]",
-            "services.pkg2.item2": "+ PHYSICAL / DIGITAL MENU DESIGN",
-            "services.pkg2.item3": "+ PACKAGING & TAKEAWAY",
-            "services.pkg2.item4": "+ UNIFORMS & APRONS",
-            "services.pkg2.item5": "+ INDOOR & OUTDOOR SIGNAGE",
-            "services.addon1.raw": "ABSOLUTE FOCUS ON READING<br>COMFORT AND STRICT GRIDS.<br>- BOOKS & MAGAZINES<br>- REPORTS & MANUALS<br>- ZINES & PRINTS",
-            "services.addon2.raw": "EXTENDING YOUR IDENTITY<br>TO TACTILE MATERIALS.<br>- POSTERS & PRINTS<br>- CORPORATE STATIONERY<br>- CUSTOM PACKAGING",
-            "services.addon3.raw": "YOUR BRAND'S PRESENCE<br>IN DIGITAL ECOSYSTEMS.<br>- INTERFACE UI/UX<br>- LANDING PAGES<br>- SOCIAL TEMPLATES",
+            "services.pkg1.name": "VISUAL IDENTITY",
+            "services.pkg1.item1": "+ STRATEGIC DIRECTION AND BRAND CONCEPT",
+            "services.pkg1.item2": "+ LOGO SYSTEM AND VARIATIONS",
+            "services.pkg1.item3": "+ COLOR PALETTE",
+            "services.pkg1.item4": "+ TYPOGRAPHIC SYSTEM",
+            "services.pkg1.item5": "+ SUPPORTING GRAPHIC ELEMENTS",
+            "services.pkg2.name": "IDENTITY FOR FOOD & DRINK",
+            "services.pkg2.item1": "+ MENU",
+            "services.pkg2.item2": "+ MAIN PACKAGING",
+            "services.pkg2.item3": "+ LABEL, SEAL OR STICKER",
+            "services.pkg2.item4": "+ ESSENTIAL STATIONERY",
+            "services.pkg2.item5": "+ DIGITAL LAUNCH MATERIAL",
+            "services.addon1.tag": "PRINT",
+            "services.addon2.tag": "DIGITAL",
+            "services.addon3.tag": "EDITORIAL",
+            "services.addon1.raw": "- BUSINESS CARDS<br>- LETTERHEAD<br>- CORPORATE STATIONERY<br>- FOLDERS AND PROMOTIONAL MATERIAL<br>- POSTERS<br>- PACKAGING<br>- LABELS<br>- MENUS",
+            "services.addon2.raw": "- EMAIL SIGNATURE<br>- SOCIAL MEDIA TEMPLATES<br>- DIGITAL BANNERS<br>- PRESENTATIONS<br>- LANDING PAGES",
+            "services.addon3.raw": "- BOOKS<br>- MAGAZINES<br>- CATALOGS<br>- REPORTS<br>- MANUALS",
             "services.proc.1a": "DISCOVERY", "services.proc.1b": "RESEARCH",
             "services.proc.2a": "STRATEGY",  "services.proc.2b": "DIRECTION",
             "services.proc.3a": "DESIGN",    "services.proc.3b": "SYSTEM",
             "services.proc.4a": "HANDOFF",   "services.proc.4b": "GUIDELINES",
             "services.proc.1c": "Kickoff call, market read and an audit of what already exists. This is where the scope gets locked.",
             "services.proc.2c": "Positioning, visual territory and moodboard. You sign off on direction before any artwork.",
-            "services.proc.3c": "Logo, type, colour and applications built as one system — not loose pieces.",
-            "services.proc.4c": "Organised files, a usage manual and a handoff call so you can run it on your own.",
-            "services.proc.disclaimer": "WE'RE IN IT WITH YOU THE WHOLE WAY —<br>NOT JUST DROPPING OFF FILES AT THE END.",
+            "services.proc.3c": "Logo, type, color and applications built as one system — not loose pieces.",
+            "services.proc.4c": "Organized files, a usage manual and a handoff call so you can run it on your own.",
+            "services.proc.disclaimer": "WE\u2019RE IN IT WITH YOU THE WHOLE WAY —<br>NOT JUST DROPPING OFF FILES AT THE END.",
             "services.faq1.q": "HOW LONG DOES A PROJECT TAKE?",
-            "services.faq1.a": "USUALLY BETWEEN 4 TO 6 WEEKS, DEPENDING ON THE PACKAGE (GASTRONOMY TAKES LONGER).",
+            "services.faq1.a": "USUALLY BETWEEN 4 TO 6 WEEKS, DEPENDING ON THE PACKAGE (THE FOOD & DRINK PACKAGE TAKES LONGER).",
             "services.faq2.q": "DO YOU DESIGN JUST THE LOGO?",
-            "services.faq2.a": "NO. WE BELIEVE A LOGO ALONE CANNOT SUSTAIN A BRAND. WE DEVELOP COMPLETE SYSTEMS.",
+            "services.faq2.a": "NO. A LOGO ALONE CANNOT SUSTAIN A BRAND. WE DEVELOP COMPLETE SYSTEMS.",
             "services.faq3.q": "WHAT ARE THE PAYMENT TERMS?",
             "services.faq3.a": "50% DEPOSIT TO RESERVE YOUR SPOT, 50% UPON FINAL DELIVERY OF FILES.",
-            "services.footer.question": "Didn't find what you needed?",
-            "services.footer.action": "CUSTOM PROJECT",
+            "services.footer.question": "Didn\u2019t find what you needed?",
 
             // Briefing Form
             "briefing.header": "[ PROJECT INQUIRY ]",
             "briefing.intro": "PLEASE FILL OUT THE FIELDS BELOW WITH AS MUCH DETAIL AS POSSIBLE.<br>THIS WILL HELP US UNDERSTAND THE SCOPE AND RETURN AN ACCURATE PROPOSAL.",
-            "briefing.name": "FULL NAME *",
-            "briefing.email": "E-MAIL *",
-            "briefing.company": "COMPANY / BRAND",
-            "briefing.service": "SERVICE OF INTEREST *",
-            "briefing.service_opt1": "[ SELECT ]",
-            "briefing.service_opt2": "ESSENTIAL VISUAL ID",
-            "briefing.service_opt3": "GASTRONOMY VISUAL ID",
-            "briefing.service_opt4": "EDITORIAL / PRINT PROJECT",
-            "briefing.service_opt5": "DIGITAL / UI PROJECT",
-            "briefing.service_opt6": "OTHER / CUSTOM PROJECT",
-            "briefing.budget": "AVAILABLE BUDGET",
-            "briefing.message": "ABOUT THE PROJECT *",
-            "briefing.msg_ph": "Briefly describe what you need, goals, references, and deadlines...",
-            "briefing.submit": "[ SUBMIT_FILE ]"
+            "briefing.submit": "[ SUBMIT_FORM ]",
+
+            // pré-briefing
+            "bf.s1": "01 — YOUR DETAILS",
+            "bf.s2": "02 — SERVICE",
+            "bf.s3": "03 — ABOUT THE PROJECT",
+            "bf.s4": "04 — CONTEXT, TIMING AND BUDGET",
+            "bf.s5": "05 — FINAL",
+            "bf.nome": "NAME *",
+            "bf.email": "E-MAIL *",
+            "bf.marca": "BRAND OR COMPANY NAME *",
+            "bf.semnome": "I DON’T HAVE A NAME YET",
+            "bf.site": "WEBSITE OR INSTAGRAM",
+            "bf.local": "WHERE IS YOUR BRAND BASED?",
+            "bf.local.ph": "City and country",
+            "bf.servico": "WHAT ARE YOU LOOKING FOR? *",
+            "bf.sel": "[ SELECT ]",
+            "bf.sv.id": "VISUAL IDENTITY",
+            "bf.sv.gastro": "IDENTITY FOR FOOD & DRINK",
+            "bf.sv.imp": "PRINT MATERIAL",
+            "bf.sv.dig": "DIGITAL MATERIAL",
+            "bf.sv.edit": "EDITORIAL PROJECT",
+            "bf.sv.naosei": "I’M NOT SURE WHAT I NEED YET",
+            "bf.id.momento": "WHAT STAGE IS YOUR BRAND AT? *",
+            "bf.id.m1": "A NEW BRAND, STILL BEING BUILT",
+            "bf.id.m2": "IT EXISTS, BUT HAS NEVER HAD A PROFESSIONAL IDENTITY",
+            "bf.id.m3": "IT HAS AN IDENTITY, BUT IT NEEDS REWORKING",
+            "bf.id.m4": "THE BRAND CHANGED AND THE CURRENT IDENTITY NO LONGER FITS",
+            "bf.id.motivacao": "WHAT MADE YOU LOOK FOR A VISUAL IDENTITY NOW? *",
+            "bf.id.sobre": "TELL ME BRIEFLY ABOUT THE BRAND AND WHAT IT OFFERS. *",
+            "bf.id.atual": "IS THERE A VISUAL IDENTITY TODAY? *",
+            "bf.sim": "YES",
+            "bf.nao": "NO",
+            "bf.id.a3": "IT’S BEING DEVELOPED",
+            "bf.id.problema": "WHAT DOESN’T WORK IN THE CURRENT IDENTITY?",
+            "bf.ga.tipo": "WHAT KIND OF BUSINESS IS IT? *",
+            "bf.ga.t1": "RESTAURANT",
+            "bf.ga.t2": "CAFÉ / COFFEE SHOP",
+            "bf.ga.t3": "BAR",
+            "bf.ga.t4": "BAKERY / PATISSERIE",
+            "bf.ga.t5": "DELIVERY",
+            "bf.ga.t6": "FOOD PRODUCT",
+            "bf.outro": "OTHER",
+            "bf.especifique": "WHICH ONE?",
+            "bf.ga.momento": "WHAT STAGE IS THE BUSINESS AT? *",
+            "bf.ga.m1": "NOT LAUNCHED YET",
+            "bf.ga.m2": "IN THE LAUNCH PHASE",
+            "bf.ga.m3": "ALREADY RUNNING",
+            "bf.ga.m4": "ALREADY EXISTS AND IS BEING REWORKED",
+            "bf.ga.sobre": "TELL ME BRIEFLY ABOUT THE BUSINESS. *",
+            "bf.ga.materiais": "BESIDES THE VISUAL IDENTITY, WHICH MATERIALS DO YOU EXPECT TO NEED?",
+            "bf.ga.mat1": "MENU",
+            "bf.ga.mat2": "PACKAGING",
+            "bf.ga.mat3": "LABEL / STICKER",
+            "bf.ga.mat4": "STATIONERY",
+            "bf.ga.mat5": "DIGITAL MATERIALS",
+            "bf.naosei": "NOT SURE YET",
+            "bf.ga.help": "You don’t need to decide everything now.",
+            "bf.imp.material": "WHICH MATERIAL DO YOU NEED?",
+            "bf.imp.m1": "BUSINESS CARDS",
+            "bf.imp.m2": "LETTERHEAD",
+            "bf.imp.m3": "CORPORATE STATIONERY",
+            "bf.imp.m4": "FOLDER",
+            "bf.imp.m5": "POSTER",
+            "bf.imp.m6": "PACKAGING",
+            "bf.imp.m7": "LABEL",
+            "bf.imp.m8": "MENU",
+            "bf.temid": "DOES YOUR BRAND ALREADY HAVE A DEFINED VISUAL IDENTITY? *",
+            "bf.parcial": "PARTIALLY",
+            "bf.imp.conteudo": "DO YOU ALREADY HAVE THE CONTENT FOR THE PIECE? *",
+            "bf.imp.c1": "YES, EVERYTHING IS READY",
+            "bf.imp.c2": "I HAVE PART OF IT",
+            "bf.imp.c3": "NOT YET",
+            "bf.imp.gráfica": "DO YOU ALREADY HAVE A PRINTER OR SUPPLIER? *",
+            "bf.pesquisando": "STILL RESEARCHING",
+            "bf.dig.material": "WHICH MATERIAL DO YOU NEED?",
+            "bf.dig.m1": "EMAIL SIGNATURE",
+            "bf.dig.m2": "SOCIAL MEDIA TEMPLATES",
+            "bf.dig.m3": "DIGITAL BANNER",
+            "bf.dig.m4": "PRESENTATION",
+            "bf.dig.m5": "LANDING PAGE",
+            "bf.dig.conteudo": "DO YOU ALREADY HAVE THE NEEDED CONTENT? *",
+            "bf.ed.tipo": "WHAT KIND OF PROJECT DO YOU NEED? *",
+            "bf.ed.t1": "BOOK",
+            "bf.ed.t2": "MAGAZINE",
+            "bf.ed.t3": "CATALOG",
+            "bf.ed.t4": "REPORT",
+            "bf.ed.t5": "MANUAL",
+            "bf.ed.t6": "ZINE / PUBLICATION",
+            "bf.ed.conteudo": "IS THE CONTENT FINISHED? *",
+            "bf.ed.c2": "IT’S IN THE FINAL STAGE",
+            "bf.ed.c3": "STILL BEING PRODUCED",
+            "bf.ed.sabepag": "DO YOU ROUGHLY KNOW HOW MANY PAGES IT WILL HAVE? *",
+            "bf.ed.paginas": "ROUGHLY HOW MANY PAGES?",
+            "bf.ed.formato": "THE PROJECT WILL BE: *",
+            "bf.ed.f1": "DIGITAL",
+            "bf.ed.f2": "PRINTED",
+            "bf.ed.f3": "DIGITAL AND PRINTED",
+            "bf.ns.sobre": "TELL ME BRIEFLY ABOUT YOUR BRAND OR PROJECT. *",
+            "bf.ns.resolver": "WHAT WOULD YOU LIKE TO SOLVE OR IMPROVE RIGHT NOW? *",
+            "bf.ns.agora": "WHAT MADE YOU LOOK FOR A DESIGNER NOW?",
+            "bf.objetivo": "WHAT IS THE MAIN GOAL OF THIS PROJECT? *",
+            "bf.objetivo.help": "It could be launching a brand, repositioning a business, professionalizing communication, developing a specific piece or preparing a launch.",
+            "bf.inicio": "WHEN WOULD YOU LIKE TO START? *",
+            "bf.in1": "AS SOON AS POSSIBLE",
+            "bf.in2": "IN THE NEXT 2–4 WEEKS",
+            "bf.in3": "IN THE NEXT 1–2 MONTHS",
+            "bf.in4": "IN MORE THAN 2 MONTHS",
+            "bf.temdata": "IS THERE AN IMPORTANT DATE FOR THE PROJECT TO BE READY? *",
+            "bf.data": "WHAT IS THE DATE?",
+            "bf.motivodata": "IS THERE A LAUNCH, EVENT OR REASON BEHIND THAT DATE?",
+            "bf.investimento": "HAVE YOU SET A BUDGET RANGE FOR THIS PROJECT? *",
+            "bf.iv1": "UP TO R$ 1,500",
+            "bf.iv2": "R$ 1,500 — R$ 2,500",
+            "bf.iv3": "R$ 2,500 — R$ 4,000",
+            "bf.iv4": "R$ 4,000 — R$ 6,000",
+            "bf.iv5": "ABOVE R$ 6,000",
+            "bf.iv6": "NOT DEFINED YET / I’D LIKE SOME GUIDANCE",
+            "bf.origem": "HOW DID YOU FIND MY WORK?",
+            "bf.or1": "INSTAGRAM",
+            "bf.or2": "BEHANCE",
+            "bf.or3": "GOOGLE",
+            "bf.or4": "PINTEREST",
+            "bf.or5": "REFERRAL",
+            "bf.obs": "ANYTHING ELSE YOU THINK I SHOULD KNOW AT THIS FIRST STAGE?",
+            "bf.disclaimer": "This is just a first contact so I can understand your project. If we move forward, you’ll receive a deeper briefing before the creative process starts.",
+            "bf.enviando": "SENDING…",
+            "bf.sucesso": "RECEIVED. I’LL REPLY WITHIN 2 BUSINESS DAYS.",
+            "bf.erro": "COULDN’T SEND. PLEASE TRY AGAIN OR WRITE TO HELLO@MARIDESIGN.CO",
+            "services.avulsos.intro": "PIECES AND MATERIALS FOR BRANDS AT DIFFERENT STAGES.<br>THEY CAN BE HIRED ON THEIR OWN OR ADDED TO A VISUAL IDENTITY PROJECT.",
+            "services.pkg1.item6": "+ VISUAL IDENTITY PRESENTATION",
+            "services.pkg1.item7": "+ BRAND GUIDELINES",
+            "services.pkg1.item8": "+ FINAL FILES FOR DIGITAL AND PRINT",
+            "services.pkg1.formats": "Delivered formats: AI · EPS · SVG · PDF · PNG · JPG",
+            "services.pkg1.note": "Print, digital and editorial services can be added to the project as the brand requires.",
+            "services.pkg2.item0": "[ INCLUDES EVERYTHING IN VISUAL IDENTITY + ]",
+            "services.pkg2.item6": "+ FINAL FILES PREPARED FOR PRODUCTION",
+            "services.pkg2.note": "Other materials can be included as the project requires."
         }
     };
 
@@ -638,6 +866,127 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+    /* =========================================
+       7B. RETRATO DO SOBRE
+       Enquanto o arquivo não existe, esconde a <img>
+       e deixa a moldura com a instrução — sem ícone
+       de imagem quebrada.
+       ========================================= */
+    document.querySelectorAll('.portrait-frame img').forEach(img => {
+        const falhou = () => img.closest('.portrait-frame').classList.add('is-empty');
+        img.addEventListener('error', falhou);
+        if (img.complete && img.naturalWidth === 0) falhou();
+    });
+
+    /* =========================================
+       8. PRÉ-BRIEFING — perguntas condicionais
+       Campo oculto = disabled. FormData ignora
+       campos desabilitados, então nada de serviço
+       não escolhido chega ao Web3Forms.
+       ========================================= */
+    const bfForm = document.getElementById('briefing-form');
+
+    if (bfForm) {
+        const bfServico = bfForm.querySelector('#bf-servico');
+        const bfSemNome = bfForm.querySelector('#bf-sem-nome');
+        const bfGrupoMarca = bfForm.querySelector('#bf-grupo-marca');
+        const bfMarca = bfForm.querySelector('#bf-marca');
+        const bfStatus = bfForm.querySelector('#bf-status');
+        const bfBotao = bfForm.querySelector('#bf-submit');
+
+        // liga/desliga um bloco inteiro. data-keep marca campos que
+        // nunca devem ser tocados (botcheck, o próprio "sem nome").
+        function ligar(el, ativo) {
+            el.hidden = !ativo;
+            el.querySelectorAll('input, select, textarea').forEach(f => {
+                if (f.hasAttribute('data-keep')) return;
+                f.disabled = !ativo;
+                if (f.dataset.req === '1') f.required = ativo;
+            });
+        }
+
+        function aplicarCondicionais() {
+            const servico = bfServico.value;
+
+            // 1. grupos por serviço
+            bfForm.querySelectorAll('[data-service]').forEach(g => {
+                ligar(g, g.dataset.service === servico);
+            });
+
+            // 2. condicionais internos — só valem dentro do grupo ativo
+            bfForm.querySelectorAll('[data-when]').forEach(el => {
+                const grupo = el.closest('[data-service]');
+                if (grupo && grupo.dataset.service !== servico) { ligar(el, false); return; }
+
+                const [id, valor] = el.dataset.when.split(':');
+                const fonte = bfForm.querySelector('#' + id);
+                let ativo = false;
+                if (fonte) {
+                    ativo = fonte.type === 'checkbox' ? fonte.checked : fonte.value === valor;
+                    if (fonte.disabled) ativo = false;
+                }
+                ligar(el, ativo);
+            });
+
+            // 3. nome da marca deixa de ser obrigatório se não existe ainda
+            if (bfSemNome && bfMarca) {
+                const semNome = bfSemNome.checked;
+                bfMarca.disabled = semNome;
+                bfMarca.required = !semNome;
+                bfGrupoMarca.classList.toggle('is-muted', semNome);
+            }
+        }
+
+        bfForm.addEventListener('change', aplicarCondicionais);
+        aplicarCondicionais();
+
+        /* -- ENVIO -- */
+        let bfEnviando = false;
+
+        function bfMensagem(chave, tipo) {
+            bfStatus.textContent = chave ? translations[currentLang][chave] : '';
+            bfStatus.dataset.i18n = chave || '';
+            bfStatus.className = 'form-status mono' + (tipo ? ' is-' + tipo : '');
+        }
+
+        bfForm.addEventListener('submit', async e => {
+            e.preventDefault();
+            if (bfEnviando) return;
+
+            // valida apenas o que está visível: campos desabilitados
+            // são ignorados nativamente por checkValidity()
+            if (!bfForm.checkValidity()) {
+                bfForm.reportValidity();
+                return;
+            }
+
+            bfEnviando = true;
+            bfBotao.disabled = true;
+            bfMensagem('bf.enviando');
+
+            try {
+                const resposta = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: new FormData(bfForm)
+                });
+                const dados = await resposta.json();
+                if (dados.success) {
+                    bfForm.reset();
+                    aplicarCondicionais();
+                    bfMensagem('bf.sucesso', 'ok');
+                } else {
+                    bfMensagem('bf.erro', 'erro');
+                }
+            } catch (err) {
+                bfMensagem('bf.erro', 'erro');
+            } finally {
+                bfEnviando = false;
+                bfBotao.disabled = false;
+            }
+        });
+    }
+
     /* =========================================
        7. SCROLL EM SLIDES
        Um gesto = uma seção. O snap nativo do CSS não
@@ -671,7 +1020,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let animating = false;
         let current = 0;
 
-        const topOf = el => el.getBoundingClientRect().top + window.scrollY;
+        // offsetTop ignora transform; getBoundingClientRect não.
+        // A revelação (.observe) desloca a seção 18px, e medir com rect
+        // fazia o pouso errar por esses 18px em todas as seções.
+        const topOf = el => {
+            let y = 0, n = el;
+            while (n) { y += n.offsetTop; n = n.offsetParent; }
+            return y;
+        };
         const maxScroll = () => document.documentElement.scrollHeight - window.innerHeight;
 
         function indexInView() {
@@ -683,6 +1039,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // easing suave nas duas pontas
         const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+
+        // passo dentro de uma seção mais alta que a tela: uma tela por gesto,
+        // com 48px de sobreposição para não perder o fio da leitura
+        function glideToY(destino) {
+            const dest = Math.min(Math.max(0, Math.round(destino)), maxScroll());
+            const from = window.scrollY;
+            const dist = dest - from;
+            if (Math.abs(dist) < 2) return;
+
+            animating = true;
+            const DURATION = stillPreferred2 ? 0 : 560;
+            let start = null;
+            const failsafe = setTimeout(() => { animating = false; }, DURATION + 900);
+
+            const step = ts => {
+                if (start === null) start = ts;
+                const t = DURATION > 0 ? Math.min(1, (ts - start) / DURATION) : 1;
+                const y = from + dist * ease(t);
+                try { window.scrollTo({ top: y, behavior: 'instant' }); }
+                catch (err) { window.scrollTo(0, y); }
+                if (t < 1) requestAnimationFrame(step);
+                else {
+                    try { window.scrollTo({ top: dest, behavior: 'instant' }); }
+                    catch (err) { window.scrollTo(0, dest); }
+                    clearTimeout(failsafe);
+                    setTimeout(() => { animating = false; }, 90);
+                }
+            };
+            requestAnimationFrame(step);
+        }
 
         function glideTo(index) {
             index = Math.max(0, Math.min(slides.length - 1, index));
@@ -729,7 +1115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     syncHeader();
                     // carência: segura a inércia residual do trackpad
                     clearTimeout(failsafe);
-                    setTimeout(() => { animating = false; }, 220);
+                    setTimeout(() => { animating = false; }, 90);
                 }
             };
             requestAnimationFrame(step);
@@ -741,7 +1127,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!el) return false;
             const top = topOf(el);
             const bottom = top + el.offsetHeight;
-            if (el.offsetHeight <= window.innerHeight + 4) return false;
+            const FOLGA = 56;
+            if (el.offsetHeight <= window.innerHeight + FOLGA) return false;
             return dir > 0
                 ? window.scrollY + window.innerHeight < bottom - 4
                 : window.scrollY > top + 4;
@@ -752,7 +1139,36 @@ document.addEventListener('DOMContentLoaded', () => {
         function go(dir) {
             if (animating) return;
             current = indexInView();
-            if (canScrollInside(dir)) return false;   // deixa o scroll nativo agir
+
+            // Seção mais alta que a tela: percorre em passos de uma tela,
+            // sempre alinhados. Antes o gesto virava rolagem nativa de 120px
+            // e dava a impressão de que nada tinha acontecido.
+            const el = slides[current];
+            if (el) {
+                const topo = topOf(el);
+                const alt = el.offsetHeight;
+                const vh = window.innerHeight;
+                const y = window.scrollY;
+                const SOBREPOR = 48;
+                if (alt > vh + 56) {
+                    // Passos iguais em vez de "uma tela cheia por gesto":
+                    // assim o último passo não vira um resto de 20px que
+                    // consome um gesto sem a página sair do lugar.
+                    const limite = topo + alt - vh;
+                    const curso = limite - topo;
+                    const n = Math.max(1, Math.ceil(curso / Math.max(120, vh - SOBREPOR)));
+                    const passo = curso / n;
+                    const k = Math.round((y - topo) / passo);
+                    if (dir > 0 && y < limite - 4) {
+                        glideToY(Math.min(limite, topo + Math.min(n, k + 1) * passo));
+                        return true;
+                    }
+                    if (dir < 0 && y > topo + 4) {
+                        glideToY(Math.max(topo, topo + Math.max(0, k - 1) * passo));
+                        return true;
+                    }
+                }
+            }
 
             // Pula paradas que caem no mesmo ponto. Quando as últimas seções
             // somadas são menores que a tela, elas grudam todas no fim do
@@ -765,14 +1181,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         }
 
+        // A inércia do trackpad dispara dezenas de eventos por segundo.
+        // Em vez de bloquear tudo por um tempo fixo depois da animação
+        // (o que engolia gestos legítimos), ignoramos só o rastro:
+        // eventos colados uns nos outros são inércia, não um gesto novo.
+        let ultimoWheel = -1e9;
         window.addEventListener('wheel', e => {
             if (!tallEnough()) return;
-            if (animating) { e.preventDefault(); return; }
+            const agora = e.timeStamp;
+            const rastro = agora - ultimoWheel < 80;
+            ultimoWheel = agora;
+            if (animating || rastro) { e.preventDefault(); return; }
             if (Math.abs(e.deltaY) < 8) return;
-            const dir = e.deltaY > 0 ? 1 : -1;
-            if (canScrollInside(dir)) return;         // rola por dentro, sem travar
             e.preventDefault();
-            go(dir);
+            go(e.deltaY > 0 ? 1 : -1);
         }, { passive: false });
 
         // teclado
