@@ -56,9 +56,11 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
 
-    /* Cada seção encosta no topo ao rolar. "proximity" (e não "mandatory")
-       para que seções mais altas que a tela continuem roláveis livremente. */
-    scroll-snap-type: y proximity;
+    /* Cada seção encaixa no topo ao rolar. "mandatory" para parar sempre
+       certinho em cada seção, uma por rolada. Seções mais altas que a tela
+       continuam roláveis por dentro (o navegador não re-encaixa enquanto
+       você percorre uma seção maior que a viewport). */
+    scroll-snap-type: y mandatory;
     scroll-padding-top: 0;
 }
 
@@ -72,7 +74,12 @@ html {
 .project-header,
 .project-gallery {
     scroll-snap-align: start;
-    scroll-margin-top: var(--header-height);
+    /* sem descontar o header: as seções preenchem a tela inteira e o header
+       é transparente por cima. Com scroll-margin-top a seção encaixava 76px
+       mais para baixo e aparecia uma fatia da seção anterior. */
+    scroll-margin-top: 0;
+    /* garante que o snap pare em TODA seção, sem pular nenhuma num gesto forte */
+    scroll-snap-stop: always;
 }
 
 /* seções que devem preencher a tela, com o conteúdo centrado na vertical */
@@ -88,7 +95,13 @@ html {
 }
 
 /* o rodapé nunca estica */
-#footer { min-height: 0; }
+#footer {
+    min-height: 0;
+    /* o rodapé é mais baixo que a tela e fica no fim do documento; encaixar
+       pelo FIM garante que dá para chegar nele (encaixar pelo topo deixaria
+       o ponto de snap além do fim do scroll e prendia o usuário no #about). */
+    scroll-snap-align: end;
+}
 
 /* Entrada da seção que chega — o conteúdo sobe e revela.
    Só com o controlador de slides ativo: sem JS nada some. */
@@ -1872,3 +1885,208 @@ sub {
 
 .form-status.is-ok { color: var(--text); }
 .form-status.is-erro { color: var(--text); text-decoration: underline; }
+
+/* =========================================================
+   BRIEFING DE IDENTIDADE VISUAL — página privada por URL.
+   Reaproveita .form-container, .input-group, .check-grid,
+   .check-item, .form-step e .giant-submit-btn. Aqui só o
+   necessário para o fluxo em etapas, as escalas e os estados.
+   ========================================================= */
+.bi-step { gap: 1.25rem; }
+
+.bi-step-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 4.5vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.bi-step-text {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    max-width: 62ch;
+    color: var(--text);
+    text-transform: none;
+}
+
+/* barra de navegação entre etapas */
+.bi-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--line-strong);
+    padding-top: clamp(1rem, 2.5svh, 2rem);
+    margin-top: clamp(0.5rem, 2svh, 1.5rem);
+}
+
+.bi-progress {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+}
+
+.bi-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    flex-wrap: wrap;
+}
+
+.bi-btn {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.25rem 0;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.bi-btn:hover { opacity: 0.5; }
+
+/* ESCALAS DE PERSONALIDADE — 5 posições + N/A, sem sliders */
+.bi-scales {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.bi-scale-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.75rem 1rem;
+}
+
+.bi-scale-pole {
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.bi-scale-dots {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.85rem;
+}
+
+.bi-scale-dot {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+/* o input real fica acessível mas visualmente representado pelo círculo */
+.bi-scale-dot input[type="radio"],
+.bi-scale-na input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bi-scale-dot-visual {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.bi-scale-dot input[type="radio"]:checked + .bi-scale-dot-visual {
+    background: var(--text);
+    border-color: var(--text);
+}
+
+.bi-scale-dot input[type="radio"]:focus-visible + .bi-scale-dot-visual {
+    outline: 1px solid var(--text);
+    outline-offset: 2px;
+}
+
+.bi-scale-dot-num {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--muted);
+    opacity: 0.6;
+}
+
+.bi-scale-na {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-left: 0.5rem;
+    align-self: center;
+}
+
+.bi-scale-na input[type="radio"]:checked ~ span { color: var(--text); text-decoration: underline; }
+
+/* confirmação final */
+.bi-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--line-strong);
+    padding-top: clamp(1rem, 2.5svh, 2rem);
+    margin-top: 1rem;
+}
+
+.bi-confirm-check { align-items: flex-start; font-size: 0.8rem; text-transform: none; }
+.bi-confirm-check span { line-height: 1.5; }
+
+/* estados de erro e conflito */
+.input-group.has-error input,
+.input-group.has-error select,
+.input-group.has-error textarea {
+    border-bottom: 2px solid var(--text);
+}
+.input-group.has-error label,
+.bi-confirm.has-error span { text-decoration: underline; }
+
+.check-item.is-conflict {
+    opacity: 0.3;
+    pointer-events: none;
+    text-decoration: line-through;
+}
+
+/* mensagem de sucesso (substitui o formulário) */
+.bi-success {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    min-height: 40svh;
+    justify-content: center;
+}
+
+/* MOBILE — as escalas empilham; nada de campos apertados */
+@media (max-width: 640px) {
+    .bi-scale-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 1rem;
+    }
+    .bi-scale-pole.align-right { text-align: left; }
+    .bi-scale-dots { justify-content: space-between; gap: 0.5rem; width: 100%; }
+    .bi-scale-na { margin-left: 0; }
+    .bi-nav { gap: 1rem; }
+    .bi-nav-actions { width: 100%; justify-content: space-between; }
+}

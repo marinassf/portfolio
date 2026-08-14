@@ -1007,7 +1007,13 @@ document.addEventListener('DOMContentLoaded', () => {
         !document.body.classList.contains('nav-open');
     const stillPreferred2 = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (slides.length > 1) {
+    // O scroll agora é 100% nativo (scroll-snap-type: y mandatory no CSS).
+    // O navegador para certinho em cada seção, uma por rolada, e lida com a
+    // inércia do trackpad sozinho — mais confiável que sequestrar o wheel.
+    // Deixe SNAP_NATIVO = false para voltar ao controlador manual antigo.
+    const SNAP_NATIVO = true;
+
+    if (!SNAP_NATIVO && slides.length > 1) {
         slides.forEach(el => el.classList.add('slide-section'));
         document.body.classList.add('slides-on');
         document.documentElement.dataset.slides = slides.length;
@@ -1127,7 +1133,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!el) return false;
             const top = topOf(el);
             const bottom = top + el.offsetHeight;
-            const FOLGA = 56;
+            // Só rola por dentro quando a seção é BEM mais alta que a tela
+            // (um texto longo de verdade). Seções que passam da tela por
+            // pouco — #work/#about com o cabeçalho e o carrossel — devem
+            // encaixar como uma parada só, senão o gesto rola um naco dentro
+            // da seção e dá a sensação de não parar certinho.
+            const FOLGA = window.innerHeight * 0.5;
             if (el.offsetHeight <= window.innerHeight + FOLGA) return false;
             return dir > 0
                 ? window.scrollY + window.innerHeight < bottom - 4
@@ -1150,7 +1161,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const vh = window.innerHeight;
                 const y = window.scrollY;
                 const SOBREPOR = 48;
-                if (alt > vh + 56) {
+                // mesma tolerância do canScrollInside: passo interno só em
+                // seções bem mais altas que a tela (> 1,5x). As quase-de-uma-tela
+                // saltam inteiras, uma seção por gesto.
+                if (alt > vh * 1.5) {
                     // Passos iguais em vez de "uma tela cheia por gesto":
                     // assim o último passo não vira um resto de 20px que
                     // consome um gesto sem a página sair do lugar.
