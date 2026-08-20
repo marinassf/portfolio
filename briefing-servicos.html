@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing de Serviços — Mari Design Co.</title>
+    <meta name="description" content="Briefing de Serviços — Mari Design Co.">
+
+    <!-- Página não divulgada: fora dos buscadores e da navegação pública -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' text-anchor='middle' fill='%230a0a0a'%3EM%3C/text%3E%3C/svg%3E">
+
+
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://maridesignco.com/briefing-servicos">
+    <meta property="og:url" content="https://maridesignco.com/briefing-servicos">
+    <meta property="og:site_name" content="Mari Design Co.">
+    <meta name="robots" content="noindex, follow">
+</head>
+
+<body>
+    <div class="specks"></div>
+    <div class="noise"></div>
+
+    <header id="site-header">
+        <div class="header-left">
+            <a href="/" class="logo">MARI DESIGN CO.</a>
+            <span class="mono muted desktop-only">FILE_008_B</span>
+        </div>
+        <nav class="header-center" id="main-nav">
+            <a href="/#work" data-i18n="nav.work">TRABALHOS</a>
+            <a href="/services" data-i18n="nav.services">SERVIÇOS</a>
+            <a href="https://wa.me/5566920002322?text=Ol%C3%A1%2C%20Marina!%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." data-i18n="nav.contact" target="_blank" rel="noopener">CONTATO</a>
+        </nav>
+        <div class="header-right">
+            <button id="nav-toggle" class="mono" aria-expanded="false" aria-controls="main-nav"
+                data-i18n="nav.menu">[ MENU ]</button>
+            <a href="/" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
+            <button id="lang-toggle" class="mono" aria-label="Toggle Language">PT / EN</button>
+        </div>
+    </header>
+
+    <main class="briefing-page">
+
+        <section class="page-hero observe">
+            <span class="page-hero-label" data-i18n="bs.header">[ BRIEFING DE PROJETO CONTRATADO ]</span>
+            <h1 class="page-title" data-i18n="bs.title">BRIEFING DE SERVIÇOS</h1>
+            <p class="page-hero-text" data-i18n="bs.intro">
+                ESTE É O BRIEFING DOS SERVIÇOS QUE VOCÊ JÁ CONTRATOU.<br>
+                SELECIONE AS PEÇAS DO PROJETO E RESPONDA APENAS O QUE SE APLICA A ELAS.
+            </p>
+            <span class="caption" data-i18n="bs.caption">O formulário se adapta aos serviços selecionados. Você pode voltar a qualquer etapa sem perder o que já preencheu.</span>
+        </section>
+
+        <section class="raw-section">
+            <div class="form-container">
+
+                <!-- WEB3FORMS INTEGRATION -->
+                <form action="https://api.web3forms.com/submit" method="POST"
+                    class="archival-form bi-form" id="briefing-servicos-form" novalidate>
+
+                    <input type="hidden" name="access_key" value="a06bb7ff-964b-4f62-8842-6cccc54767f6">
+                    <input type="hidden" name="subject" id="bs-subject" value="Briefing de Serviços — Mari Design Co." data-keep>
+                    <input type="hidden" name="from_name" value="Briefing de Serviços" data-keep>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none" data-keep>
+
+                    <div class="bi-steps">
+
+                        <!-- ETAPA 01 — PROJETO -->
+                        <section class="form-step bi-step" data-step="1" aria-labelledby="bs-s1-title">
+                            <span class="form-step-label mono muted" data-i18n="bs.s1.label">01 — PROJETO</span>
+                            <h2 class="bi-step-title" id="bs-s1-title" data-i18n="bs.s1.title">VAMOS ORGANIZAR O PROJETO.</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-nome-marca" data-i18n="bs.q.nome_marca">NOME DA MARCA OU EMPRESA *</label>
+                                    <input type="text" name="nome_marca" id="bs-nome-marca" data-req="1" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="bs-cliente" data-i18n="bs.q.cliente">SEU NOME *</label>
+                                    <input type="text" name="cliente" id="bs-cliente" data-req="1" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="bs-email" data-i18n="bs.q.email">E-MAIL *</label>
+                                    <input type="email" name="email" id="bs-email" data-req="1" required>
+                                </div>
+                                <div class="input-group full-width">
+                                    <span class="label-as-legend" data-i18n="bs.q.servicos">QUAIS SERVIÇOS FAZEM PARTE DESTE PROJETO? *</span>
+                                    <span class="caption" data-i18n="bs.h.servicos">Selecione apenas os materiais que fazem parte do projeto já contratado.</span>
+                                    <span class="label-as-legend mt-1" data-i18n="bs.grp.impresso">IMPRESSO</span>
+                                    <div class="check-grid" id="bs-servicos" data-req-min="1">
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Cartão de visita" data-key="cartao"><span data-i18n="bs.sv.cartao">CARTÃO DE VISITA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Papel timbrado" data-key="papel"><span data-i18n="bs.sv.papel">PAPEL TIMBRADO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Papelaria corporativa" data-key="papelaria"><span data-i18n="bs.sv.papelaria">PAPELARIA CORPORATIVA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Folder e materiais promocionais" data-key="folder"><span data-i18n="bs.sv.folder">FOLDER E MATERIAIS PROMOCIONAIS</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Poster / Cartaz" data-key="poster"><span data-i18n="bs.sv.poster">POSTER / CARTAZ</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Embalagem" data-key="embalagem"><span data-i18n="bs.sv.embalagem">EMBALAGEM</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Rótulo" data-key="rotulo"><span data-i18n="bs.sv.rotulo">RÓTULO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Menu / Cardápio" data-key="menu"><span data-i18n="bs.sv.menu">MENU / CARDÁPIO</span></label>
+                                    </div>
+                                    <span class="label-as-legend mt-1" data-i18n="bs.grp.digital">DIGITAL</span>
+                                    <div class="check-grid" data-svc-parent="bs-servicos">
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Assinatura de e-mail" data-key="assinatura"><span data-i18n="bs.sv.assinatura">ASSINATURA DE E-MAIL</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Templates para redes sociais" data-key="templates"><span data-i18n="bs.sv.templates">TEMPLATES PARA REDES SOCIAIS</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Banner digital" data-key="banner"><span data-i18n="bs.sv.banner">BANNER DIGITAL</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Apresentação" data-key="apresentacao"><span data-i18n="bs.sv.apresentacao">APRESENTAÇÃO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Landing page" data-key="landing"><span data-i18n="bs.sv.landing">LANDING PAGE</span></label>
+                                    </div>
+                                    <span class="label-as-legend mt-1" data-i18n="bs.grp.editorial">EDITORIAL</span>
+                                    <div class="check-grid" data-svc-parent="bs-servicos">
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Livro" data-key="livro"><span data-i18n="bs.sv.livro">LIVRO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Revista" data-key="revista"><span data-i18n="bs.sv.revista">REVISTA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Catálogo" data-key="catalogo"><span data-i18n="bs.sv.catalogo">CATÁLOGO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Relatório" data-key="relatorio"><span data-i18n="bs.sv.relatorio">RELATÓRIO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="servicos_contratados" value="Manual" data-key="manual"><span data-i18n="bs.sv.manual">MANUAL</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 02 — MARCA -->
+                        <section class="form-step bi-step" data-step="2" aria-labelledby="bs-s2-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s2.label">02 — MARCA</span>
+                            <h2 class="bi-step-title" id="bs-s2-title" data-i18n="bs.s2.title">ANTES DA PEÇA, A MARCA.</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-id-existente" data-i18n="bs.q.id_existente">SUA MARCA JÁ POSSUI IDENTIDADE VISUAL DEFINIDA? *</label>
+                                    <select name="identidade_existente" id="bs-id-existente" data-req="1" required>
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <span class="label-as-legend" data-i18n="bs.q.materiais_id">QUAIS MATERIAIS DE IDENTIDADE VISUAL VOCÊ POSSUI?</span>
+                                    <div class="check-grid">
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Logotipo"><span data-i18n="bs.mid.1">LOGOTIPO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Variações do logotipo"><span data-i18n="bs.mid.2">VARIAÇÕES DO LOGOTIPO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Paleta de cores"><span data-i18n="bs.mid.3">PALETA DE CORES</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Tipografia"><span data-i18n="bs.mid.4">TIPOGRAFIA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Elementos gráficos"><span data-i18n="bs.mid.5">ELEMENTOS GRÁFICOS</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Manual de marca"><span data-i18n="bs.mid.6">MANUAL DE MARCA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Arquivos editáveis"><span data-i18n="bs.mid.7">ARQUIVOS EDITÁVEIS</span></label>
+                                        <label class="check-item"><input type="checkbox" name="materiais_identidade" value="Nenhum / não sei"><span data-i18n="bs.mid.8">NENHUM / NÃO SEI</span></label>
+                                    </div>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-arquivos" data-i18n="bs.q.arquivos">VOCÊ POSSUI OS ARQUIVOS DA IDENTIDADE VISUAL?</label>
+                                    <select name="possui_arquivos" id="bs-arquivos">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Apenas alguns" data-i18n="bs.opt.alguns">TENHO APENAS ALGUNS</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                    </select>
+                                    <span class="caption" data-i18n="bs.h.arquivos">Se necessário, os arquivos poderão ser enviados separadamente conforme as orientações do projeto.</span>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-regra-id" data-i18n="bs.q.regra_id">EXISTE ALGUMA REGRA DA IDENTIDADE QUE PRECISA SER RESPEITADA?</label>
+                                    <textarea name="regra_identidade" id="bs-regra-id" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 03 — OBJETIVO & USO -->
+                        <section class="form-step bi-step" data-step="3" aria-labelledby="bs-s3-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s3.label">03 — OBJETIVO & USO</span>
+                            <h2 class="bi-step-title" id="bs-s3-title" data-i18n="bs.s3.title">O QUE ESSA PEÇA PRECISA FAZER?</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-objetivo" data-i18n="bs.q.objetivo">QUAL É O PRINCIPAL OBJETIVO DOS MATERIAIS CONTRATADOS? *</label>
+                                    <textarea name="objetivo_projeto" id="bs-objetivo" rows="3" data-req="1" required></textarea>
+                                    <span class="caption" data-i18n="bs.h.objetivo">Conte o que você precisa comunicar, resolver ou facilitar com essas peças.</span>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-publico" data-i18n="bs.q.publico">PARA QUEM ESSE MATERIAL SERÁ DIRECIONADO? *</label>
+                                    <textarea name="publico" id="bs-publico" rows="3" data-req="1" required></textarea>
+                                </div>
+                                <div class="input-group full-width">
+                                    <span class="label-as-legend" data-i18n="bs.q.onde_uso">ONDE OS MATERIAIS SERÃO UTILIZADOS?</span>
+                                    <div class="check-grid">
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Ambiente físico"><span data-i18n="bs.uso.1">AMBIENTE FÍSICO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Atendimento ao cliente"><span data-i18n="bs.uso.2">ATENDIMENTO AO CLIENTE</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Evento"><span data-i18n="bs.uso.3">EVENTO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Ponto de venda"><span data-i18n="bs.uso.4">PONTO DE VENDA</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Envio para clientes"><span data-i18n="bs.uso.5">ENVIO PARA CLIENTES</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Redes sociais"><span data-i18n="bs.uso.6">REDES SOCIAIS</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Site"><span data-i18n="bs.uso.7">SITE</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="E-mail"><span data-i18n="bs.uso.8">E-MAIL</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Apresentação comercial"><span data-i18n="bs.uso.9">APRESENTAÇÃO COMERCIAL</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Impressão"><span data-i18n="bs.uso.10">IMPRESSÃO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Delivery"><span data-i18n="bs.uso.11">DELIVERY</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Embalagem de produto"><span data-i18n="bs.uso.12">EMBALAGEM DE PRODUTO</span></label>
+                                        <label class="check-item"><input type="checkbox" name="onde_uso" value="Outro" id="bs-uso-outro"><span data-i18n="bs.opt.outro">OUTRO</span></label>
+                                    </div>
+                                </div>
+                                <div class="input-group full-width" data-when="bs-uso-outro:checked" hidden>
+                                    <label for="bs-uso-outro-txt" data-i18n="bs.q.especifique">QUAL?</label>
+                                    <input type="text" name="onde_uso_outro" id="bs-uso-outro-txt">
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-acao" data-i18n="bs.q.acao">EXISTE ALGUMA AÇÃO QUE VOCÊ ESPERA QUE A PESSOA TOME AO RECEBER OU VISUALIZAR ESSE MATERIAL?</label>
+                                    <textarea name="acao_esperada" id="bs-acao" rows="2"></textarea>
+                                    <span class="caption" data-i18n="bs.h.acao">Por exemplo: entrar em contato, comprar, solicitar orçamento, acessar um link, compreender uma informação, escolher um produto etc.</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 04 — CONTEÚDO -->
+                        <section class="form-step bi-step" data-step="4" aria-labelledby="bs-s4-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s4.label">04 — CONTEÚDO</span>
+                            <h2 class="bi-step-title" id="bs-s4-title" data-i18n="bs.s4.title">AGORA, O CONTEÚDO.</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-conteudo-status" data-i18n="bs.q.conteudo_status">O CONTEÚDO QUE SERÁ UTILIZADO JÁ ESTÁ PRONTO? *</label>
+                                    <select name="conteudo_status" id="bs-conteudo-status" data-req="1" required>
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Finalizado" data-i18n="bs.cs.1">SIM, ESTÁ FINALIZADO</option>
+                                        <option value="Maior parte" data-i18n="bs.cs.2">TENHO A MAIOR PARTE</option>
+                                        <option value="Sendo preparado" data-i18n="bs.cs.3">AINDA ESTÁ SENDO PREPARADO</option>
+                                        <option value="Preciso organizar" data-i18n="bs.cs.4">PRECISO ORGANIZAR ANTES DE ENVIAR</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-responsavel-textos" data-i18n="bs.q.responsavel_textos">QUEM SERÁ RESPONSÁVEL PELOS TEXTOS?</label>
+                                    <select name="responsavel_textos" id="bs-responsavel-textos">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Eu / minha equipe" data-i18n="bs.rt.1">EU / MINHA EQUIPE</option>
+                                        <option value="Textos prontos" data-i18n="bs.rt.2">JÁ TENHO OS TEXTOS PRONTOS</option>
+                                        <option value="Outro profissional" data-i18n="bs.rt.3">OUTRO PROFISSIONAL</option>
+                                        <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-imagens-existem" data-i18n="bs.q.imagens_existem">AS IMAGENS E FOTOGRAFIAS NECESSÁRIAS JÁ EXISTEM?</label>
+                                    <select name="imagens_existem" id="bs-imagens-existem">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        <option value="Não serão necessárias" data-i18n="bs.ie.3">NÃO SERÃO NECESSÁRIAS</option>
+                                        <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-imagens-fornecedor" data-i18n="bs.q.imagens_fornecedor">QUEM FORNECERÁ AS IMAGENS?</label>
+                                    <select name="imagens_fornecedor" id="bs-imagens-fornecedor">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Eu / minha equipe" data-i18n="bs.if.1">EU / MINHA EQUIPE</option>
+                                        <option value="Fotógrafo" data-i18n="bs.if.2">FOTÓGRAFO</option>
+                                        <option value="Banco de imagens" data-i18n="bs.if.3">BANCO DE IMAGENS</option>
+                                        <option value="Ainda será definido" data-i18n="bs.if.4">AINDA SERÁ DEFINIDO</option>
+                                        <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-conteudo-obrigatorio" data-i18n="bs.q.conteudo_obrigatorio">EXISTE ALGUM CONTEÚDO OBRIGATÓRIO?</label>
+                                    <textarea name="conteudo_obrigatorio" id="bs-conteudo-obrigatorio" rows="3"></textarea>
+                                    <span class="caption" data-i18n="bs.h.conteudo_obrigatorio">Por exemplo: telefone, site, endereço, redes sociais, QR Code, preços, informações legais, dados de contato, créditos ou outras informações.</span>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-nao-aparecer" data-i18n="bs.q.nao_aparecer">EXISTE ALGUMA INFORMAÇÃO QUE NÃO PODE APARECER?</label>
+                                    <textarea name="nao_pode_aparecer" id="bs-nao-aparecer" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 05 — ESPECIFICAÇÕES (blocos condicionais por serviço) -->
+                        <section class="form-step bi-step" data-step="5" aria-labelledby="bs-s5-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s5.label">05 — ESPECIFICAÇÕES</span>
+                            <h2 class="bi-step-title" id="bs-s5-title" data-i18n="bs.s5.title">SOBRE CADA PEÇA.</h2>
+                            <p class="bi-step-text" data-i18n="bs.s5.text">As perguntas abaixo aparecem de acordo com os serviços que você marcou. Responda apenas o que já estiver definido.</p>
+
+                            <!-- BLOCO A — IMPRESSOS -->
+                            <div class="svc-block" data-svc-block="A" data-block-svcs="cartao papel papelaria folder poster" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkA.title">SOBRE OS MATERIAIS IMPRESSOS</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <label for="bs-a-uso" data-i18n="bs.a.uso">QUAL SERÁ O USO PRINCIPAL DO MATERIAL?</label>
+                                        <textarea name="impresso_uso_principal" id="bs-a-uso" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-a-tem-dim" data-i18n="bs.a.tem_dim">VOCÊ JÁ POSSUI AS DIMENSÕES FINAIS?</label>
+                                        <select name="impresso_tem_dimensoes" id="bs-a-tem-dim">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Definir com gráfica" data-i18n="bs.a.dim_gr">AINDA SERÁ DEFINIDO COM A GRÁFICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-a-tem-dim:Sim" hidden>
+                                        <label for="bs-a-dim" data-i18n="bs.a.dim">QUAIS SÃO?</label>
+                                        <input type="text" name="material_impresso_dimensoes" id="bs-a-dim">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-a-grafica" data-i18n="bs.a.grafica">JÁ EXISTE UMA GRÁFICA OU FORNECEDOR DEFINIDO?</label>
+                                        <select name="impresso_grafica" id="bs-a-grafica">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Escolhendo" data-i18n="bs.a.escolhendo">AINDA ESTOU ESCOLHENDO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-a-grafica:Sim" hidden>
+                                        <label for="bs-a-grafica-spec" data-i18n="bs.a.grafica_spec">A GRÁFICA FORNECEU ALGUMA ESPECIFICAÇÃO OU GABARITO?</label>
+                                        <select name="impresso_grafica_spec" id="bs-a-grafica-spec">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Vou solicitar" data-i18n="bs.a.vou_solicitar">AINDA VOU SOLICITAR</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-a-fv" data-i18n="bs.a.frente_verso">O MATERIAL TERÁ IMPRESSÃO FRENTE E VERSO?</label>
+                                        <select name="impresso_frente_verso" id="bs-a-fv">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.a.acabamentos">EXISTE ALGUM ACABAMENTO JÁ DEFINIDO?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Nenhum"><span data-i18n="bs.ac.1">NENHUM</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Laminação"><span data-i18n="bs.ac.2">LAMINAÇÃO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Verniz localizado"><span data-i18n="bs.ac.3">VERNIZ LOCALIZADO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Hot stamping"><span data-i18n="bs.ac.4">HOT STAMPING</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Relevo"><span data-i18n="bs.ac.5">RELEVO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Corte especial"><span data-i18n="bs.ac.6">CORTE ESPECIAL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Dobra"><span data-i18n="bs.ac.7">DOBRA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Outro" id="bs-a-acab-outro"><span data-i18n="bs.opt.outro">OUTRO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="impresso_acabamentos" value="Ainda não sei"><span data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-a-acab-outro:checked" hidden>
+                                        <label for="bs-a-acab-outro-txt" data-i18n="bs.q.especifique">QUAL?</label>
+                                        <input type="text" name="impresso_acabamentos_outro" id="bs-a-acab-outro-txt">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-a-versoes" data-i18n="bs.a.versoes">QUANTAS VERSÕES DIFERENTES SERÃO NECESSÁRIAS?</label>
+                                        <input type="text" name="impresso_versoes" id="bs-a-versoes">
+                                        <span class="caption" data-i18n="bs.h.a_versoes">Por exemplo: cartões para pessoas diferentes, versões por unidade, cidade, idioma ou departamento.</span>
+                                    </div>
+
+                                    <!-- Subcondição CARTÃO -->
+                                    <div class="input-group full-width" data-svc="cartao" hidden>
+                                        <label for="bs-cartao-pessoas" data-i18n="bs.cartao.pessoas">QUANTAS PESSOAS PRECISARÃO DE CARTÃO?</label>
+                                        <input type="number" name="cartao_pessoas" id="bs-cartao-pessoas" min="0">
+                                    </div>
+                                    <div class="input-group full-width" data-svc="cartao" hidden>
+                                        <span class="label-as-legend" data-i18n="bs.cartao.infos">QUAIS INFORMAÇÕES DEVERÃO APARECER NO CARTÃO?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Nome"><span data-i18n="bs.ci.1">NOME</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Cargo"><span data-i18n="bs.ci.2">CARGO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Telefone"><span data-i18n="bs.ci.3">TELEFONE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="E-mail"><span data-i18n="bs.ci.4">E-MAIL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Site"><span data-i18n="bs.ci.5">SITE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Instagram"><span data-i18n="bs.ci.6">INSTAGRAM</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Endereço"><span data-i18n="bs.ci.7">ENDEREÇO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="QR Code"><span data-i18n="bs.ci.8">QR CODE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cartao_infos" value="Outra"><span data-i18n="bs.opt.outra">OUTRA</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="cartao" hidden>
+                                        <label for="bs-cartao-muda" data-i18n="bs.cartao.muda">AS INFORMAÇÕES MUDAM ENTRE OS CARTÕES?</label>
+                                        <select name="cartao_muda" id="bs-cartao-muda">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição PAPEL TIMBRADO -->
+                                    <div class="input-group full-width" data-svc="papel" hidden>
+                                        <label for="bs-papel-uso" data-i18n="bs.papel.uso">O PAPEL TIMBRADO SERÁ UTILIZADO:</label>
+                                        <select name="papel_uso" id="bs-papel-uso">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Impresso" data-i18n="bs.opt.impresso">IMPRESSO</option>
+                                            <option value="Digital" data-i18n="bs.opt.digital">DIGITAL</option>
+                                            <option value="Impresso e digital" data-i18n="bs.opt.ambos">IMPRESSO E DIGITAL</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="papel" hidden>
+                                        <label for="bs-papel-editavel" data-i18n="bs.papel.editavel">VOCÊ PRECISA DE UMA VERSÃO EDITÁVEL PARA DOCUMENTOS?</label>
+                                        <select name="papel_editavel" id="bs-papel-editavel">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição FOLDER -->
+                                    <div class="input-group full-width" data-svc="folder" hidden>
+                                        <label for="bs-folder-paginas" data-i18n="bs.folder.paginas">O FOLDER TERÁ APROXIMADAMENTE QUANTAS PÁGINAS OU FACES?</label>
+                                        <input type="text" name="folder_paginas" id="bs-folder-paginas">
+                                    </div>
+                                    <div class="input-group full-width" data-svc="folder" hidden>
+                                        <label for="bs-folder-dobra" data-i18n="bs.folder.dobra">EXISTE ALGUMA DOBRA PREVISTA?</label>
+                                        <select name="folder_dobra" id="bs-folder-dobra">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sem dobra" data-i18n="bs.fd.1">SEM DOBRA</option>
+                                            <option value="Uma dobra" data-i18n="bs.fd.2">UMA DOBRA</option>
+                                            <option value="Duas ou mais" data-i18n="bs.fd.3">DUAS OU MAIS DOBRAS</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="folder" hidden>
+                                        <label for="bs-folder-ordem" data-i18n="bs.folder.ordem">O CONTEÚDO JÁ ESTÁ ORGANIZADO NA ORDEM EM QUE DEVE APARECER?</label>
+                                        <select name="folder_ordem" id="bs-folder-ordem">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição POSTER -->
+                                    <div class="input-group full-width" data-svc="poster" hidden>
+                                        <label for="bs-poster-local" data-i18n="bs.poster.local">ONDE O POSTER / CARTAZ SERÁ EXIBIDO?</label>
+                                        <textarea name="poster_local" id="bs-poster-local" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="poster" hidden>
+                                        <label for="bs-poster-dist" data-i18n="bs.poster.distancia">EXISTE UMA DISTÂNCIA APROXIMADA DE LEITURA?</label>
+                                        <select name="poster_distancia" id="bs-poster-dist">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Próxima" data-i18n="bs.pd.1">PRÓXIMA</option>
+                                            <option value="Média" data-i18n="bs.pd.2">MÉDIA</option>
+                                            <option value="Longa" data-i18n="bs.pd.3">LONGA</option>
+                                            <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="poster" hidden>
+                                        <label for="bs-poster-destaque" data-i18n="bs.poster.destaque">EXISTE ALGUMA INFORMAÇÃO QUE PRECISA TER DESTAQUE PRINCIPAL?</label>
+                                        <textarea name="poster_destaque" id="bs-poster-destaque" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO B — EMBALAGENS E RÓTULOS -->
+                            <div class="svc-block" data-svc-block="B" data-block-svcs="embalagem rotulo" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkB.title">SOBRE O PRODUTO E A PRODUÇÃO</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-produto" data-i18n="bs.b.produto">QUAL PRODUTO RECEBERÁ ESTA EMBALAGEM OU RÓTULO? *</label>
+                                        <textarea name="embalagem_produto" id="bs-b-produto" rows="2" data-req="1"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-versoes" data-i18n="bs.b.versoes">QUANTAS VERSÕES SERÃO NECESSÁRIAS?</label>
+                                        <input type="number" name="embalagem_versoes" id="bs-b-versoes" min="0">
+                                        <span class="caption" data-i18n="bs.h.b_versoes">Por exemplo: sabores, fragrâncias, tamanhos, produtos ou linhas diferentes.</span>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-estrutura" data-i18n="bs.b.estrutura">A ESTRUTURA FÍSICA DA EMBALAGEM JÁ ESTÁ DEFINIDA?</label>
+                                        <select name="embalagem_estrutura" id="bs-b-estrutura">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não se aplica" data-i18n="bs.b.na_proj">NÃO SE APLICA AO PROJETO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-fornecedor" data-i18n="bs.b.fornecedor">JÁ EXISTE FORNECEDOR?</label>
+                                        <select name="embalagem_fornecedor" id="bs-b-fornecedor">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Escolhendo" data-i18n="bs.a.escolhendo">AINDA ESTOU ESCOLHENDO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-dieline" data-i18n="bs.b.dieline">VOCÊ POSSUI O GABARITO / DIELINE FORNECIDO PELO FABRICANTE?</label>
+                                        <select name="embalagem_dieline" id="bs-b-dieline">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Vou receber" data-i18n="bs.b.vou_receber">AINDA VOU RECEBER</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-dimensoes" data-i18n="bs.b.dimensoes">QUAIS SÃO AS DIMENSÕES?</label>
+                                        <input type="text" name="embalagem_dimensoes" id="bs-b-dimensoes" placeholder="Ainda não definidas" data-i18n-placeholder="bs.b.dim_ph">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-material" data-i18n="bs.b.material">QUAL É O MATERIAL DA EMBALAGEM OU RÓTULO?</label>
+                                        <input type="text" name="embalagem_material" id="bs-b-material">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-limitacao" data-i18n="bs.b.limitacao">EXISTE ALGUMA LIMITAÇÃO DE IMPRESSÃO?</label>
+                                        <select name="embalagem_limitacao" id="bs-b-limitacao">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-b-limitacao:Sim" hidden>
+                                        <label for="bs-b-limitacao-qual" data-i18n="bs.q.qual">QUAL?</label>
+                                        <textarea name="embalagem_limitacao_qual" id="bs-b-limitacao-qual" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-infos" data-i18n="bs.b.infos">QUAIS INFORMAÇÕES OBRIGATÓRIAS PRECISAM APARECER?</label>
+                                        <textarea name="embalagem_infos" id="bs-b-infos" rows="2"></textarea>
+                                        <span class="caption" data-i18n="bs.h.b_infos">Envie apenas informações já definidas e aprovadas para o produto.</span>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-barras" data-i18n="bs.b.barras">HÁ CÓDIGO DE BARRAS?</label>
+                                        <select name="embalagem_codigo_barras" id="bs-b-barras">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda será definido" data-i18n="bs.opt.ainda_def">AINDA SERÁ DEFINIDO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-qr" data-i18n="bs.b.qr">EXISTE QR CODE?</label>
+                                        <select name="embalagem_qr" id="bs-b-qr">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda será definido" data-i18n="bs.opt.ainda_def">AINDA SERÁ DEFINIDO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-legais" data-i18n="bs.b.legais">EXISTEM INFORMAÇÕES LEGAIS, NUTRICIONAIS OU REGULATÓRIAS?</label>
+                                        <select name="embalagem_info_legais" id="bs-b-legais">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-b-legais:Sim" hidden>
+                                        <span class="caption" data-i18n="bs.b.legais_nota">Essas informações deverão ser fornecidas pelo cliente prontas e revisadas.</span>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-b-sem-impressao" data-i18n="bs.b.sem_impressao">EXISTE ALGUMA ÁREA DA EMBALAGEM ONDE NÃO PODE HAVER IMPRESSÃO?</label>
+                                        <textarea name="embalagem_area_sem_impressao" id="bs-b-sem-impressao" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <span class="caption" data-i18n="bs.b.aviso">O projeto de design não inclui automaticamente engenharia estrutural de embalagem, desenvolvimento de faca, cálculos técnicos, textos legais, tabela nutricional, registro sanitário, validação regulatória ou produção gráfica. Quando necessários, esses dados e arquivos deverão ser fornecidos pelo cliente ou pelo fornecedor responsável.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO C — MENUS E CARDÁPIOS -->
+                            <div class="svc-block" data-svc-block="C" data-block-svcs="menu" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkC.title">SOBRE O CARDÁPIO</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-formato" data-i18n="bs.c.formato">O CARDÁPIO SERÁ:</label>
+                                        <select name="cardapio_formato" id="bs-c-formato">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Impresso" data-i18n="bs.opt.impresso">IMPRESSO</option>
+                                            <option value="Digital" data-i18n="bs.opt.digital">DIGITAL</option>
+                                            <option value="Impresso e digital" data-i18n="bs.opt.ambos">IMPRESSO E DIGITAL</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-conteudo" data-i18n="bs.c.conteudo">O CONTEÚDO ESTÁ FINALIZADO?</label>
+                                        <select name="cardapio_conteudo" id="bs-c-conteudo">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Quase" data-i18n="bs.opt.quase">QUASE</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-itens" data-i18n="bs.c.itens">QUANTOS ITENS APROXIMADAMENTE EXISTEM?</label>
+                                        <input type="number" name="cardapio_itens" id="bs-c-itens" min="0">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-org" data-i18n="bs.c.org">COMO OS ITENS ESTÃO ORGANIZADOS?</label>
+                                        <textarea name="cardapio_organizacao" id="bs-c-org" rows="2"></textarea>
+                                        <span class="caption" data-i18n="bs.h.c_org">Por exemplo: entradas, principais, sobremesas, cafés, bebidas etc.</span>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-precos" data-i18n="bs.c.precos">OS PREÇOS JÁ ESTÃO DEFINIDOS?</label>
+                                        <select name="cardapio_precos" id="bs-c-precos">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-desc" data-i18n="bs.c.desc">AS DESCRIÇÕES DOS ITENS JÁ ESTÃO PRONTAS?</label>
+                                        <select name="cardapio_descricoes" id="bs-c-desc">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.c.complementar">EXISTE ALGUMA INFORMAÇÃO COMPLEMENTAR?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Ingredientes"><span data-i18n="bs.cc.1">INGREDIENTES</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Alérgenos"><span data-i18n="bs.cc.2">ALÉRGENOS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Vegano / vegetariano"><span data-i18n="bs.cc.3">VEGANO / VEGETARIANO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Picância"><span data-i18n="bs.cc.4">PICÂNCIA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Tamanhos / porções"><span data-i18n="bs.cc.5">TAMANHOS / PORÇÕES</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Harmonizações"><span data-i18n="bs.cc.6">HARMONIZAÇÕES</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Outras"><span data-i18n="bs.opt.outras">OUTRAS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="cardapio_complementar" value="Nenhuma"><span data-i18n="bs.opt.nenhuma">NENHUMA</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-atualiza" data-i18n="bs.c.atualiza">O CARDÁPIO PRECISARÁ SER ATUALIZADO COM FREQUÊNCIA?</label>
+                                        <select name="cardapio_atualiza" id="bs-c-atualiza">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-qr" data-i18n="bs.c.qr">HAVERÁ QR CODE?</label>
+                                        <select name="cardapio_qr" id="bs-c-qr">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-fotos" data-i18n="bs.c.fotos">HAVERÁ FOTOGRAFIAS?</label>
+                                        <select name="cardapio_fotos" id="bs-c-fotos">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Algumas" data-i18n="bs.opt.algumas">ALGUMAS</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-formato-def" data-i18n="bs.c.formato_def">JÁ EXISTE FORMATO OU DIMENSÃO DEFINIDOS?</label>
+                                        <select name="cardapio_formato_def" id="bs-c-formato-def">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-c-formato-def:Sim" hidden>
+                                        <label for="bs-c-dimensoes" data-i18n="bs.c.dimensoes">QUAL FORMATO / DIMENSÃO?</label>
+                                        <input type="text" name="cardapio_dimensoes" id="bs-c-dimensoes">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-c-grafica" data-i18n="bs.c.grafica">JÁ EXISTE GRÁFICA?</label>
+                                        <select name="cardapio_grafica" id="bs-c-grafica">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Somente digital" data-i18n="bs.c.so_digital">SERÁ SOMENTE DIGITAL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO D — MATERIAIS DIGITAIS -->
+                            <div class="svc-block" data-svc-block="D" data-block-svcs="assinatura templates banner" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkD.title">SOBRE O USO DIGITAL</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.d.plataformas">EM QUAIS PLATAFORMAS O MATERIAL SERÁ UTILIZADO?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="Instagram"><span data-i18n="bs.dp.1">INSTAGRAM</span></label>
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="LinkedIn"><span data-i18n="bs.dp.2">LINKEDIN</span></label>
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="Facebook"><span data-i18n="bs.dp.3">FACEBOOK</span></label>
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="Site"><span data-i18n="bs.dp.4">SITE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="E-mail"><span data-i18n="bs.dp.5">E-MAIL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="digital_plataformas" value="Outra" id="bs-d-plat-outra"><span data-i18n="bs.opt.outra">OUTRA</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-d-plat-outra:checked" hidden>
+                                        <label for="bs-d-plat-outra-txt" data-i18n="bs.q.especifique">QUAL?</label>
+                                        <input type="text" name="digital_plataformas_outra" id="bs-d-plat-outra-txt">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-d-dim" data-i18n="bs.d.dimensoes">EXISTEM DIMENSÕES OBRIGATÓRIAS?</label>
+                                        <select name="digital_dimensoes" id="bs-d-dim">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-d-dim:Sim" hidden>
+                                        <label for="bs-d-dim-qual" data-i18n="bs.q.quais">QUAIS?</label>
+                                        <input type="text" name="digital_dimensoes_quais" id="bs-d-dim-qual">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-d-versoes" data-i18n="bs.d.versoes">QUANTAS VERSÕES OU FORMATOS SERÃO NECESSÁRIOS?</label>
+                                        <input type="text" name="digital_versoes" id="bs-d-versoes">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-d-atualizado" data-i18n="bs.d.atualizado">O CONTEÚDO SERÁ ATUALIZADO DEPOIS?</label>
+                                        <select name="digital_atualizado" id="bs-d-atualizado">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Talvez" data-i18n="bs.opt.talvez">TALVEZ</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-d-editavel" data-i18n="bs.d.editavel">VOCÊ PRECISA QUE ALGUM MATERIAL SEJA EDITÁVEL POSTERIORMENTE?</label>
+                                        <select name="digital_editavel" id="bs-d-editavel">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição ASSINATURA -->
+                                    <div class="input-group full-width" data-svc="assinatura" hidden>
+                                        <label for="bs-assin-pessoas" data-i18n="bs.assin.pessoas">QUANTAS PESSOAS UTILIZARÃO A ASSINATURA?</label>
+                                        <input type="number" name="assinatura_pessoas" id="bs-assin-pessoas" min="0">
+                                    </div>
+                                    <div class="input-group full-width" data-svc="assinatura" hidden>
+                                        <span class="label-as-legend" data-i18n="bs.assin.infos">QUAIS INFORMAÇÕES PRECISAM APARECER NA ASSINATURA?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Nome"><span data-i18n="bs.ci.1">NOME</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Cargo"><span data-i18n="bs.ci.2">CARGO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Telefone"><span data-i18n="bs.ci.3">TELEFONE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="E-mail"><span data-i18n="bs.ci.4">E-MAIL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Site"><span data-i18n="bs.ci.5">SITE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Redes sociais"><span data-i18n="bs.ci.9">REDES SOCIAIS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Endereço"><span data-i18n="bs.ci.7">ENDEREÇO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Logo"><span data-i18n="bs.ci.10">LOGO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="assinatura_infos" value="Outra"><span data-i18n="bs.opt.outra">OUTRA</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="assinatura" hidden>
+                                        <label for="bs-assin-servico" data-i18n="bs.assin.servico">QUAL SERVIÇO DE E-MAIL É UTILIZADO?</label>
+                                        <select name="assinatura_servico" id="bs-assin-servico">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Gmail" data-i18n="bs.as.1">GMAIL</option>
+                                            <option value="Outlook" data-i18n="bs.as.2">OUTLOOK</option>
+                                            <option value="Apple Mail" data-i18n="bs.as.3">APPLE MAIL</option>
+                                            <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                            <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição TEMPLATES -->
+                                    <div class="input-group full-width" data-svc="templates" hidden>
+                                        <span class="label-as-legend" data-i18n="bs.tpl.redes">PARA QUAL REDE SOCIAL?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="templates_redes" value="Instagram"><span data-i18n="bs.dp.1">INSTAGRAM</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_redes" value="LinkedIn"><span data-i18n="bs.dp.2">LINKEDIN</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_redes" value="Facebook"><span data-i18n="bs.dp.3">FACEBOOK</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_redes" value="TikTok"><span data-i18n="bs.tr.tiktok">TIKTOK</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_redes" value="Outra"><span data-i18n="bs.opt.outra">OUTRA</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="templates" hidden>
+                                        <label for="bs-tpl-conteudo" data-i18n="bs.tpl.conteudo">QUE TIPOS DE CONTEÚDO A MARCA PUBLICA COM MAIS FREQUÊNCIA?</label>
+                                        <textarea name="templates_conteudo" id="bs-tpl-conteudo" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="templates" hidden>
+                                        <span class="label-as-legend" data-i18n="bs.tpl.formatos">QUAIS FORMATOS SERÃO NECESSÁRIOS?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="templates_formatos" value="Post"><span data-i18n="bs.tf.1">POST</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_formatos" value="Story"><span data-i18n="bs.tf.2">STORY</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_formatos" value="Carrossel"><span data-i18n="bs.tf.3">CARROSSEL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_formatos" value="Capa"><span data-i18n="bs.tf.4">CAPA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="templates_formatos" value="Outro"><span data-i18n="bs.opt.outro">OUTRO</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="templates" hidden>
+                                        <label for="bs-tpl-quem" data-i18n="bs.tpl.quem">QUEM UTILIZARÁ OS TEMPLATES DEPOIS?</label>
+                                        <select name="templates_quem" id="bs-tpl-quem">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Eu" data-i18n="bs.tq.1">EU</option>
+                                            <option value="Minha equipe" data-i18n="bs.tq.2">MINHA EQUIPE</option>
+                                            <option value="Social media" data-i18n="bs.tq.3">SOCIAL MEDIA</option>
+                                            <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Subcondição BANNER -->
+                                    <div class="input-group full-width" data-svc="banner" hidden>
+                                        <label for="bs-banner-local" data-i18n="bs.banner.local">ONDE O BANNER SERÁ PUBLICADO?</label>
+                                        <input type="text" name="banner_local" id="bs-banner-local">
+                                    </div>
+                                    <div class="input-group full-width" data-svc="banner" hidden>
+                                        <label for="bs-banner-cta" data-i18n="bs.banner.cta">EXISTE CTA (CHAMADA PARA AÇÃO)?</label>
+                                        <select name="banner_cta" id="bs-banner-cta">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-svc="banner" data-when="bs-banner-cta:Sim" hidden>
+                                        <label for="bs-banner-cta-qual" data-i18n="bs.q.qual">QUAL?</label>
+                                        <input type="text" name="banner_cta_qual" id="bs-banner-cta-qual">
+                                    </div>
+                                    <div class="input-group full-width" data-svc="banner" hidden>
+                                        <label for="bs-banner-spec" data-i18n="bs.banner.spec">EXISTE ALGUMA ESPECIFICAÇÃO TÉCNICA DA PLATAFORMA?</label>
+                                        <select name="banner_spec" id="bs-banner-spec">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO E — APRESENTAÇÕES -->
+                            <div class="svc-block" data-svc-block="E" data-block-svcs="apresentacao" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkE.title">SOBRE A APRESENTAÇÃO</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-objetivo" data-i18n="bs.e.objetivo">QUAL É O OBJETIVO PRINCIPAL?</label>
+                                        <select name="apresentacao_objetivo" id="bs-e-objetivo">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Institucional" data-i18n="bs.eo.1">APRESENTAÇÃO INSTITUCIONAL</option>
+                                            <option value="Comercial" data-i18n="bs.eo.2">COMERCIAL</option>
+                                            <option value="Pitch" data-i18n="bs.eo.3">PITCH</option>
+                                            <option value="Portfólio" data-i18n="bs.eo.4">PORTFÓLIO</option>
+                                            <option value="Treinamento" data-i18n="bs.eo.5">TREINAMENTO</option>
+                                            <option value="Relatório" data-i18n="bs.eo.6">RELATÓRIO</option>
+                                            <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-publico" data-i18n="bs.e.publico">PARA QUEM SERÁ APRESENTADA?</label>
+                                        <textarea name="apresentacao_publico" id="bs-e-publico" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-slides" data-i18n="bs.e.slides">QUANTOS SLIDES APROXIMADAMENTE?</label>
+                                        <input type="number" name="apresentacao_slides" id="bs-e-slides" min="0">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-estruturado" data-i18n="bs.e.estruturado">O CONTEÚDO JÁ ESTÁ ESTRUTURADO SLIDE A SLIDE?</label>
+                                        <select name="apresentacao_estruturado" id="bs-e-estruturado">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-texto" data-i18n="bs.e.texto">QUEM FORNECERÁ O TEXTO?</label>
+                                        <select name="apresentacao_texto" id="bs-e-texto">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Cliente" data-i18n="bs.et.1">CLIENTE</option>
+                                            <option value="Equipe" data-i18n="bs.et.2">EQUIPE</option>
+                                            <option value="Outro profissional" data-i18n="bs.rt.3">OUTRO PROFISSIONAL</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-graficos" data-i18n="bs.e.graficos">EXISTEM GRÁFICOS OU TABELAS?</label>
+                                        <select name="apresentacao_graficos" id="bs-e-graficos">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-imagens" data-i18n="bs.e.imagens">EXISTEM IMAGENS?</label>
+                                        <select name="apresentacao_imagens" id="bs-e-imagens">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-editavel" data-i18n="bs.e.editavel">O ARQUIVO PRECISARÁ SER EDITADO PELO CLIENTE POSTERIORMENTE?</label>
+                                        <select name="apresentacao_editavel" id="bs-e-editavel">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-e-formato" data-i18n="bs.e.formato">EXISTE ALGUM FORMATO ESPECÍFICO NECESSÁRIO?</label>
+                                        <select name="apresentacao_formato" id="bs-e-formato">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="PDF" data-i18n="bs.ef.1">PDF</option>
+                                            <option value="PowerPoint" data-i18n="bs.ef.2">POWERPOINT</option>
+                                            <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO F — LANDING PAGE -->
+                            <div class="svc-block" data-svc-block="F" data-block-svcs="landing" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkF.title">SOBRE A LANDING PAGE</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-objetivo" data-i18n="bs.f.objetivo">QUAL É O PRINCIPAL OBJETIVO DA PÁGINA?</label>
+                                        <select name="landing_objetivo" id="bs-f-objetivo">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Apresentar um serviço" data-i18n="bs.fo.1">APRESENTAR UM SERVIÇO</option>
+                                            <option value="Gerar contatos" data-i18n="bs.fo.2">GERAR CONTATOS</option>
+                                            <option value="Receber inscrições" data-i18n="bs.fo.3">RECEBER INSCRIÇÕES</option>
+                                            <option value="Divulgar lançamento" data-i18n="bs.fo.4">DIVULGAR LANÇAMENTO</option>
+                                            <option value="Vender produto" data-i18n="bs.fo.5">VENDER PRODUTO</option>
+                                            <option value="Apresentar campanha" data-i18n="bs.fo.6">APRESENTAR CAMPANHA</option>
+                                            <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-acao" data-i18n="bs.f.acao">QUAL É A PRINCIPAL AÇÃO QUE O VISITANTE DEVE REALIZAR?</label>
+                                        <textarea name="landing_acao" id="bs-f-acao" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-publico" data-i18n="bs.f.publico">PARA QUEM ESSA PÁGINA SERÁ DIRECIONADA?</label>
+                                        <textarea name="landing_publico" id="bs-f-publico" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-conteudo" data-i18n="bs.f.conteudo">O CONTEÚDO JÁ ESTÁ PRONTO?</label>
+                                        <select name="landing_conteudo" id="bs-f-conteudo">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-dominio" data-i18n="bs.f.dominio">JÁ EXISTE DOMÍNIO?</label>
+                                        <select name="landing_dominio" id="bs-f-dominio">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não sei" data-i18n="bs.opt.nao_sei">NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-parte-site" data-i18n="bs.f.parte_site">A LANDING PAGE FARÁ PARTE DE UM SITE JÁ EXISTENTE?</label>
+                                        <select name="landing_parte_site" id="bs-f-parte-site">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-f-parte-site:Sim" hidden>
+                                        <label for="bs-f-site-url" data-i18n="bs.f.site_url">QUAL É O ENDEREÇO?</label>
+                                        <input type="url" name="landing_site_url" id="bs-f-site-url" placeholder="https://">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.f.secoes">QUE SEÇÕES VOCÊ ACREDITA QUE PRECISAM EXISTIR?</span>
+                                        <span class="caption" data-i18n="bs.h.f_secoes">Essa resposta não determina obrigatoriamente a arquitetura final.</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Hero"><span data-i18n="bs.fs.1">HERO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Sobre"><span data-i18n="bs.fs.2">SOBRE</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Benefícios"><span data-i18n="bs.fs.3">BENEFÍCIOS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Serviços / Produto"><span data-i18n="bs.fs.4">SERVIÇOS / PRODUTO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Depoimentos"><span data-i18n="bs.fs.5">DEPOIMENTOS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Portfólio"><span data-i18n="bs.fs.6">PORTFÓLIO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="FAQ"><span data-i18n="bs.fs.7">FAQ</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Formulário"><span data-i18n="bs.fs.8">FORMULÁRIO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Contato"><span data-i18n="bs.fs.9">CONTATO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="CTA"><span data-i18n="bs.fs.10">CTA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Outro"><span data-i18n="bs.opt.outro">OUTRO</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_secoes" value="Ainda não sei"><span data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-formulario" data-i18n="bs.f.formulario">HAVERÁ FORMULÁRIO?</label>
+                                        <select name="landing_formulario" id="bs-f-formulario">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.f.integracao">ALGUMA INTEGRAÇÃO É NECESSÁRIA?</span>
+                                        <div class="check-grid">
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="E-mail"><span data-i18n="bs.fi.1">E-MAIL</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="WhatsApp"><span data-i18n="bs.fi.2">WHATSAPP</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="Web3Forms"><span data-i18n="bs.fi.3">WEB3FORMS</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="Newsletter"><span data-i18n="bs.fi.4">NEWSLETTER</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="Outra"><span data-i18n="bs.opt.outra">OUTRA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="Nenhuma"><span data-i18n="bs.opt.nenhuma">NENHUMA</span></label>
+                                            <label class="check-item"><input type="checkbox" name="landing_integracao" value="Ainda não sei"><span data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-links" data-i18n="bs.f.links">EXISTEM LINKS EXTERNOS IMPORTANTES?</label>
+                                        <textarea name="landing_links" id="bs-f-links" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-f-requisitos" data-i18n="bs.f.requisitos">EXISTEM REQUISITOS TÉCNICOS ESPECÍFICOS?</label>
+                                        <textarea name="landing_requisitos" id="bs-f-requisitos" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BLOCO G — EDITORIAL -->
+                            <div class="svc-block" data-svc-block="G" data-block-svcs="livro revista catalogo relatorio manual" hidden>
+                                <span class="form-step-label mono muted" data-i18n="bs.blkG.title">SOBRE A PUBLICAÇÃO</span>
+                                <div class="form-grid">
+                                    <div class="input-group full-width">
+                                        <span class="label-as-legend" data-i18n="bs.g.tipo">TIPO(S) DE PUBLICAÇÃO SELECIONADO(S):</span>
+                                        <span class="caption" id="bs-g-tipo-label">—</span>
+                                        <input type="hidden" name="editorial_tipo" id="bs-g-tipo">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-objetivo" data-i18n="bs.g.objetivo">QUAL É O OBJETIVO DA PUBLICAÇÃO?</label>
+                                        <textarea name="editorial_objetivo" id="bs-g-objetivo" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-publico" data-i18n="bs.g.publico">QUEM É O PÚBLICO?</label>
+                                        <textarea name="editorial_publico" id="bs-g-publico" rows="2"></textarea>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-conteudo" data-i18n="bs.g.conteudo">O CONTEÚDO ESTÁ FINALIZADO?</label>
+                                        <select name="editorial_conteudo" id="bs-g-conteudo">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Fase final" data-i18n="bs.g.fase_final">EM FASE FINAL</option>
+                                            <option value="Produzindo" data-i18n="bs.g.produzindo">AINDA ESTÁ SENDO PRODUZIDO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-paginas" data-i18n="bs.g.paginas">QUANTAS PÁGINAS APROXIMADAMENTE?</label>
+                                        <input type="number" name="editorial_paginas" id="bs-g-paginas" min="0">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-revisado" data-i18n="bs.g.revisado">O TEXTO JÁ FOI REVISADO?</label>
+                                        <select name="editorial_revisado" id="bs-g-revisado">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Em revisão" data-i18n="bs.g.em_revisao">ESTÁ EM REVISÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-estrutura" data-i18n="bs.g.estrutura">A ESTRUTURA JÁ ESTÁ DEFINIDA?</label>
+                                        <select name="editorial_estrutura" id="bs-g-estrutura">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-capitulos" data-i18n="bs.g.capitulos">EXISTEM CAPÍTULOS OU SEÇÕES?</label>
+                                        <select name="editorial_capitulos" id="bs-g-capitulos">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-indice" data-i18n="bs.g.indice">EXISTE ÍNDICE?</label>
+                                        <select name="editorial_indice" id="bs-g-indice">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-imagens" data-i18n="bs.g.imagens">EXISTEM IMAGENS OU FOTOGRAFIAS?</label>
+                                        <select name="editorial_imagens" id="bs-g-imagens">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Parcialmente" data-i18n="bs.opt.parcial">PARCIALMENTE</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-tabelas" data-i18n="bs.g.tabelas">EXISTEM TABELAS OU GRÁFICOS?</label>
+                                        <select name="editorial_tabelas" id="bs-g-tabelas">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-legendas" data-i18n="bs.g.legendas">EXISTEM LEGENDAS, CRÉDITOS OU NOTAS?</label>
+                                        <select name="editorial_legendas" id="bs-g-legendas">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-formato" data-i18n="bs.g.formato">A PUBLICAÇÃO SERÁ:</label>
+                                        <select name="editorial_formato" id="bs-g-formato">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Impressa" data-i18n="bs.gf.1">IMPRESSA</option>
+                                            <option value="Digital" data-i18n="bs.opt.digital">DIGITAL</option>
+                                            <option value="Impressa e digital" data-i18n="bs.gf.3">IMPRESSA E DIGITAL</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-formato-def" data-i18n="bs.g.formato_def">EXISTE FORMATO FINAL DEFINIDO?</label>
+                                        <select name="editorial_formato_def" id="bs-g-formato-def">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-g-formato-def:Sim" hidden>
+                                        <label for="bs-g-dimensoes" data-i18n="bs.g.dimensoes">QUAIS DIMENSÕES?</label>
+                                        <input type="text" name="editorial_dimensoes" id="bs-g-dimensoes">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-grafica" data-i18n="bs.g.grafica">EXISTE GRÁFICA DEFINIDA?</label>
+                                        <select name="editorial_grafica" id="bs-g-grafica">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-acabamento" data-i18n="bs.g.acabamento">EXISTE ACABAMENTO PREVISTO?</label>
+                                        <select name="editorial_acabamento" id="bs-g-acabamento">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                            <option value="Ainda não sei" data-i18n="bs.opt.ainda_nao_sei">AINDA NÃO SEI</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-g-acabamento:Sim" hidden>
+                                        <label for="bs-g-acabamento-qual" data-i18n="bs.q.qual">QUAL?</label>
+                                        <input type="text" name="editorial_acabamento_qual" id="bs-g-acabamento-qual">
+                                    </div>
+                                    <div class="input-group full-width">
+                                        <label for="bs-g-versoes" data-i18n="bs.g.versoes">SERÁ NECESSÁRIA MAIS DE UMA VERSÃO?</label>
+                                        <select name="editorial_versoes" id="bs-g-versoes">
+                                            <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                            <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                            <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group full-width" data-when="bs-g-versoes:Sim" hidden>
+                                        <label for="bs-g-versoes-quais" data-i18n="bs.q.quais">QUAIS?</label>
+                                        <input type="text" name="editorial_versoes_quais" id="bs-g-versoes-quais">
+                                        <span class="caption" data-i18n="bs.h.g_versoes">Por exemplo: idioma, edição, tamanho, versão digital etc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 06 — PRODUÇÃO -->
+                        <section class="form-step bi-step" data-step="6" aria-labelledby="bs-s6-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s6.label">06 — PRODUÇÃO</span>
+                            <h2 class="bi-step-title" id="bs-s6-title" data-i18n="bs.s6.title">ANTES DE PRODUZIR.</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-fornecedores" data-i18n="bs.q.fornecedores">EXISTEM FORNECEDORES OU GRÁFICAS QUE EU PRECISAREI CONSIDERAR?</label>
+                                    <select name="tem_fornecedores" id="bs-fornecedores">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width" data-when="bs-fornecedores:Sim" hidden>
+                                    <label for="bs-fornecedores-quais" data-i18n="bs.q.quais">QUAIS?</label>
+                                    <textarea name="graficas" id="bs-fornecedores-quais" rows="2"></textarea>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-spec-recebidas" data-i18n="bs.q.spec_recebidas">VOCÊ JÁ RECEBEU ESPECIFICAÇÕES TÉCNICAS DESSES FORNECEDORES?</label>
+                                    <select name="especificacoes_recebidas" id="bs-spec-recebidas">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        <option value="Ainda não" data-i18n="bs.opt.ainda_nao">AINDA NÃO</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-tem-data" data-i18n="bs.q.tem_data">EXISTE ALGUMA DATA DE PRODUÇÃO, PUBLICAÇÃO, LANÇAMENTO OU EVENTO?</label>
+                                    <select name="tem_data" id="bs-tem-data">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width" data-when="bs-tem-data:Sim" hidden>
+                                    <label for="bs-data" data-i18n="bs.q.data">QUAL?</label>
+                                    <input type="date" name="data_projeto" id="bs-data">
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-prazo-int" data-i18n="bs.q.prazo_int">EXISTE ALGUM PRAZO INTERMEDIÁRIO IMPORTANTE?</label>
+                                    <textarea name="prazo_intermediario" id="bs-prazo-int" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 07 — APROVAÇÃO -->
+                        <section class="form-step bi-step" data-step="7" aria-labelledby="bs-s7-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s7.label">07 — APROVAÇÃO</span>
+                            <h2 class="bi-step-title" id="bs-s7-title" data-i18n="bs.s7.title">QUEM APROVA O PROJETO?</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-quem-aprova" data-i18n="bs.q.quem_aprova">QUEM PARTICIPA DAS APROVAÇÕES?</label>
+                                    <select name="quem_aprova" id="bs-quem-aprova">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Apenas eu" data-i18n="bs.qa.1">APENAS EU</option>
+                                        <option value="Eu + sócio(a)" data-i18n="bs.qa.2">EU + SÓCIO(A)</option>
+                                        <option value="Equipe" data-i18n="bs.qa.3">EQUIPE</option>
+                                        <option value="Diretoria" data-i18n="bs.qa.4">DIRETORIA</option>
+                                        <option value="Cliente final" data-i18n="bs.qa.5">CLIENTE FINAL</option>
+                                        <option value="Outro" data-i18n="bs.opt.outro">OUTRO</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-decisao-final" data-i18n="bs.q.decisao_final">QUEM POSSUI A DECISÃO FINAL? *</label>
+                                    <input type="text" name="responsavel_aprovacao" id="bs-decisao-final" data-req="1" required>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-fornecedor-aprova" data-i18n="bs.q.fornecedor_aprova">EXISTE ALGUM FORNECEDOR QUE TAMBÉM PRECISARÁ APROVAR ESPECIFICAÇÕES TÉCNICAS?</label>
+                                    <select name="fornecedor_aprova" id="bs-fornecedor-aprova">
+                                        <option value="" disabled selected data-i18n="bs.sel">[ SELECIONE ]</option>
+                                        <option value="Sim" data-i18n="bs.opt.sim">SIM</option>
+                                        <option value="Não" data-i18n="bs.opt.nao">NÃO</option>
+                                        <option value="Não se aplica" data-i18n="bs.opt.na">NÃO SE APLICA</option>
+                                    </select>
+                                </div>
+                                <div class="input-group full-width" data-when="bs-fornecedor-aprova:Sim" hidden>
+                                    <label for="bs-fornecedor-aprova-qual" data-i18n="bs.q.qual">QUAL?</label>
+                                    <input type="text" name="fornecedor_aprova_qual" id="bs-fornecedor-aprova-qual">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ETAPA 08 — FINALIZAR -->
+                        <section class="form-step bi-step" data-step="8" aria-labelledby="bs-s8-title" hidden>
+                            <span class="form-step-label mono muted" data-i18n="bs.s8.label">08 — FINALIZAR</span>
+                            <h2 class="bi-step-title" id="bs-s8-title" data-i18n="bs.s8.title">ÚLTIMAS INFORMAÇÕES.</h2>
+                            <div class="form-grid">
+                                <div class="input-group full-width">
+                                    <label for="bs-algo-importante" data-i18n="bs.q.algo_importante">EXISTE ALGO IMPORTANTE SOBRE O PROJETO QUE AINDA NÃO APARECEU NESTE BRIEFING?</label>
+                                    <textarea name="algo_importante" id="bs-algo-importante" rows="3"></textarea>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-preocupacao" data-i18n="bs.q.preocupacao">EXISTE ALGUMA PREOCUPAÇÃO ESPECÍFICA EM RELAÇÃO ÀS PEÇAS?</label>
+                                    <textarea name="preocupacao" id="bs-preocupacao" rows="3"></textarea>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-sucesso" data-i18n="bs.q.sucesso">O QUE FARIA VOCÊ CONSIDERAR ESTE PROJETO BEM RESOLVIDO? *</label>
+                                    <textarea name="criterio_sucesso" id="bs-sucesso" rows="3" data-req="1" required></textarea>
+                                </div>
+                                <div class="input-group full-width">
+                                    <label for="bs-pendencias" data-i18n="bs.q.pendencias">EXISTE ALGUM ARQUIVO, TEXTO, ESPECIFICAÇÃO OU INFORMAÇÃO QUE AINDA PRECISARÁ SER ENVIADO?</label>
+                                    <textarea name="pendencias" id="bs-pendencias" rows="2"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="bi-confirm">
+                                <span class="form-step-label mono muted" data-i18n="bs.confirm.label">TUDO CERTO?</span>
+                                <p class="bi-step-text" data-i18n="bs.confirm.text">Revise suas respostas antes de enviar. Elas serão utilizadas como base para o desenvolvimento dos materiais contratados. Caso alguma informação técnica ainda não esteja definida, podemos alinhá-la durante o projeto quando necessário.</p>
+                                <label class="check-item bi-confirm-check"><input type="checkbox" name="confirmacao" id="bs-confirm" value="Confirmado" data-req="1" required><span data-i18n="bs.confirm.check">Confirmo que revisei as informações e que os conteúdos fornecidos estão corretos para o desenvolvimento do projeto.</span></label>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!-- NAVEGAÇÃO ENTRE ETAPAS -->
+                    <div class="bi-nav">
+                        <span class="bi-progress mono muted"><span id="bs-current">01</span> / <span id="bs-total">08</span></span>
+                        <div class="bi-nav-actions">
+                            <button type="button" class="bi-btn mono" id="bs-back" data-i18n="bs.back" hidden>[ ⟵ VOLTAR ]</button>
+                            <button type="button" class="bi-btn mono" id="bs-next" data-i18n="bs.next">[ CONTINUAR ⟶ ]</button>
+                            <button type="submit" class="giant-submit-btn" id="bs-submit" hidden>
+                                <span data-i18n="bs.submit">[ ENVIAR BRIEFING ]</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="form-status mono" id="bs-status" role="status" aria-live="polite"></p>
+                </form>
+
+                <!-- MENSAGEM DE SUCESSO (substitui o formulário) -->
+                <div class="bi-success" id="bs-success" hidden role="status" aria-live="polite">
+                    <span class="form-step-label mono muted" data-i18n="bs.success.label">RECEBIDO</span>
+                    <h2 class="bi-step-title" data-i18n="bs.success.title">BRIEFING RECEBIDO.</h2>
+                    <p class="bi-step-text" data-i18n="bs.success.text">Obrigada. Vou usar essas informações como base para organizar e desenvolver os materiais do projeto.</p>
+                    <a href="/" class="bi-btn mono" data-i18n="bs.success.home">[ ⟵ VOLTAR AO INÍCIO ]</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer-reduced observe">
+        <div class="footer-bottom">
+            <div class="footer-widget">
+                <div class="widget-time">
+                    <span data-i18n="footer.widget.city">Brasil</span> &bull; <span id="live-clock">16:00:00</span>
+                </div>
+                <div class="office-status mono">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">EST&Uacute;DIO ABERTO</span>
+                </div>
+            </div>
+            <div class="footer-links-wrapper mono">
+                <div class="social-links"></div>
+                <div class="copyright muted">
+                    <span>&copy; 2026 MARI DESIGN CO.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="briefing-servicos.js"></script>
+</body>
+
+</html>

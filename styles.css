@@ -3,18 +3,33 @@
 /* =========================================
    1. FONTS
    ========================================= */
+/* Display — Aktiv Grotesk (arquivos locais em /fonts/aktiv, convertidos p/ woff2).
+   O site usa Regular (400) e Medium (500). */
 @font-face {
-    font-family: 'Alte Haas Grotesk';
-    src: local('Alte Haas Grotesk'), url('assets/fonts/AlteHaasGroteskRegular.woff2') format('woff2');
+    font-family: 'Aktiv Grotesk';
+    src: url('fonts/aktiv/AktivGrotesk-Regular.woff2') format('woff2'),
+         url('fonts/aktiv/AktivGrotesk-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Alte Haas Grotesk';
-    src: local('Alte Haas Grotesk Bold'), url('assets/fonts/AlteHaasGroteskBold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Aktiv Grotesk';
+    src: url('fonts/aktiv/AktivGrotesk-Medium.woff2') format('woff2'),
+         url('fonts/aktiv/AktivGrotesk-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Mono do site — Departure Mono (arquivos locais em /fonts).
+   Só tem o peso Regular; 500 é sintetizado pelo navegador quando usado. */
+@font-face {
+    font-family: 'Departure Mono';
+    src: url('fonts/DepartureMono-Regular.woff2') format('woff2'),
+         url('fonts/DepartureMono-Regular.woff') format('woff');
+    font-weight: 400 500;
     font-style: normal;
     font-display: swap;
 }
@@ -30,10 +45,10 @@
     --line-strong: rgba(10, 10, 10, 0.85);
     --surface: #f4f4f4;
 
-    /* Display = grotesca apertada. Archivo cobre quando as fontes locais não existem. */
-    --font-display: 'Alte Haas Grotesk', 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-mono: 'IBM Plex Mono', 'DM Mono', ui-monospace, monospace;
-    --font-main: var(--font-mono);
+    /* Aktiv Grotesk = voz principal (texto de leitura). Mono só como acento decorativo. */
+    --font-display: 'Aktiv Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-mono: 'Departure Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    --font-main: var(--font-display);
 
     --page-padding: clamp(1.25rem, 5vw, 4rem);
     --grid-gap: clamp(1.5rem, 3vw, 3rem);
@@ -134,8 +149,8 @@ body.slides-on .slide-section.is-entering > *:nth-child(3) { animation-delay: 0.
 body {
     background-color: var(--bg);
     color: var(--text);
-    /* MONO É A VOZ PADRÃO DO SITE — a grotesca só aparece no display */
-    font-family: var(--font-mono);
+    /* AKTIV GROTESK É A VOZ PADRÃO DO SITE — a mono só aparece como acento decorativo */
+    font-family: var(--font-display);
     font-size: 0.8rem;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -463,7 +478,7 @@ body::before {
 }
 
 .hero-text {
-    font-family: var(--font-mono);
+    font-family: var(--font-display);
     font-size: clamp(0.85rem, 1.35vw, 1.15rem);
     line-height: 1.95;
     letter-spacing: 0.05em;
@@ -472,6 +487,7 @@ body::before {
 }
 
 .hero-location {
+    font-family: var(--font-mono);
     margin-top: 2rem;
     font-size: 0.75rem;
     letter-spacing: 0.1em;
@@ -730,14 +746,22 @@ body::before {
 /* Retrato e texto pendurados na mesma linha de topo: antes cada um
    flutuava por conta própria e a seção parecia duas peças soltas. */
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--grid-gap);
+    /* frase curta grande à esquerda + foto à direita, alinhada pela base.
+       Composição simples e reta — nada de esticar. */
     margin-top: 2rem;
-    align-items: start;
     border-top: 1px solid var(--line);
-    padding-top: 1.5rem;
+    padding-top: clamp(1.5rem, 3vh, 2.5rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: end;
 }
+
+/* about encostado no topo (abaixo do header), sem boiar no centro da tela */
+#about { justify-content: flex-start; padding-top: calc(var(--header-height) + 3rem); }
+
+.about-lead { align-self: start; }
+.about-portrait { justify-self: end; }
 
 /* telas baixas: aperta o bloco em vez de deixar a seção passar da tela */
 @media (max-height: 700px) {
@@ -763,7 +787,6 @@ body::before {
    legenda numerada em mono.
    ----------------------------------------- */
 .about-side {
-    grid-column: 1 / 4;
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
@@ -775,7 +798,7 @@ body::before {
     gap: 0.6rem;
     /* acompanha a coluna do grid, com teto pela altura da tela */
     width: 100%;
-    max-width: min(240px, calc(38svh * 3 / 4));
+    max-width: min(200px, calc(38svh * 3 / 4));
 }
 
 .portrait-frame {
@@ -847,7 +870,6 @@ body::before {
 }
 
 .about-text {
-    grid-column: 4 / 13;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -856,10 +878,10 @@ body::before {
 .about-lead {
     font-family: var(--font-display);
     text-transform: uppercase;
-    font-size: clamp(0.98rem, 1.75vw, 1.5rem);
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    max-width: 48ch;
+    font-size: clamp(1.5rem, 3vw, 2.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    max-width: 18ch;
 }
 
 /* segundo parágrafo em mono: cria hierarquia e amarra o bloco,
@@ -869,9 +891,7 @@ body::before {
     font-size: 0.78rem;
     line-height: 1.75;
     color: var(--muted);
-    max-width: 62ch;
-    border-top: 1px solid var(--line);
-    padding-top: 1.1rem;
+    max-width: none;
 }
 
 .archival-marks {
@@ -1121,7 +1141,7 @@ body::before {
 .desc-column { grid-column: 6 / 13; }
 
 .desc-column p {
-    font-family: var(--font-mono);
+    font-family: var(--font-display);
     font-size: 0.85rem;
     line-height: 1.65;
     letter-spacing: 0.03em;
@@ -1167,6 +1187,18 @@ body::before {
     width: 100%;
     height: auto;
     background-color: var(--surface);
+}
+
+/* Imagens full-width da galeria (peças soltas, fora do grid): altura firme +
+   object-fit para SEMPRE preencher 100% da largura. Sem isto, uma imagem em
+   retrato encolhe a largura para manter a proporção (visível no Safari),
+   deixando espaço vazio na lateral. */
+.project-gallery > .gallery-item > img {
+    width: 100%;
+    height: 74vh;        /* fallback para navegadores sem svh */
+    height: 74svh;
+    max-height: none;
+    object-fit: cover;
 }
 
 .gallery-item figcaption {
@@ -1616,7 +1648,7 @@ sub {
     border: none;
     border-bottom: 1px solid var(--line-strong);
     color: var(--text);
-    font-family: var(--font-mono);
+    font-family: var(--font-display);
     font-size: 0.9rem;
     padding: 0.5rem 0;
     border-radius: 0;
@@ -1736,7 +1768,8 @@ sub {
 
     .about-portrait { max-width: min(132px, 20svh); }
 
-    .about-lead { font-size: clamp(0.95rem, 4.2vw, 1.25rem); }
+    .about-lead { font-size: clamp(1.35rem, 6.5vw, 2rem); max-width: none; }
+    .about-portrait { justify-self: start; }
 
     .footer-top {
         flex-direction: column;
@@ -2089,4 +2122,26 @@ sub {
     .bi-scale-na { margin-left: 0; }
     .bi-nav { gap: 1rem; }
     .bi-nav-actions { width: 100%; justify-content: space-between; }
+}
+
+/* =========================================================
+   TIPOGRAFIA — AKTIV GROTESK É A VOZ DE LEITURA
+   Departure Mono fica só como acento decorativo (códigos,
+   índices, rótulos, tags, meta). Este bloco garante que o
+   texto corrido em Aktiv, mesmo quando o HTML ainda carrega
+   a classe .mono por herança.
+   ========================================================= */
+.faq-answer p,
+.footer-note {
+    font-family: var(--font-display) !important;
+}
+
+/* Serviços: itens (listas de pacotes e add-ons) e perguntas do FAQ
+   permanecem em Departure Mono como acento técnico. */
+.raw-pkg-details ul,
+.raw-pkg-details li,
+.pkg-includes,
+.dense-mono-block p,
+.faq-q {
+    font-family: var(--font-mono) !important;
 }

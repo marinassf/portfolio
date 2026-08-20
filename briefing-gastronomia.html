@@ -14,12 +14,14 @@
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' text-anchor='middle' fill='%230a0a0a'%3EM%3C/text%3E%3C/svg%3E">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://maridesignco.com/briefing-gastronomia">
+    <meta property="og:url" content="https://maridesignco.com/briefing-gastronomia">
+    <meta property="og:site_name" content="Mari Design Co.">
+    <meta name="robots" content="noindex, follow">
 </head>
 
 <body>
@@ -28,19 +30,18 @@
 
     <header id="site-header">
         <div class="header-left">
-            <a href="index.html" class="logo">MARI DESIGN CO.</a>
+            <a href="/" class="logo">MARI DESIGN CO.</a>
             <span class="mono muted desktop-only">FILE_007_B</span>
         </div>
         <nav class="header-center" id="main-nav">
-            <a href="index.html#work" data-i18n="nav.work">TRABALHOS</a>
-            <a href="services.html" data-i18n="nav.services">SERVIÇOS</a>
-            <a href="index.html#about" data-i18n="nav.about">SOBRE</a>
-            <a href="index.html#footer" data-i18n="nav.contact">CONTATO</a>
+            <a href="/#work" data-i18n="nav.work">TRABALHOS</a>
+            <a href="/services" data-i18n="nav.services">SERVIÇOS</a>
+            <a href="https://wa.me/5566920002322?text=Ol%C3%A1%2C%20Marina!%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." data-i18n="nav.contact" target="_blank" rel="noopener">CONTATO</a>
         </nav>
         <div class="header-right">
             <button id="nav-toggle" class="mono" aria-expanded="false" aria-controls="main-nav"
                 data-i18n="nav.menu">[ MENU ]</button>
-            <a href="index.html" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
+            <a href="/" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
             <button id="lang-toggle" class="mono" aria-label="Toggle Language">PT / EN</button>
         </div>
     </header>
@@ -50,7 +51,7 @@
         <section class="page-hero observe">
             <span class="page-hero-label" data-i18n="bg.header">[ BRIEFING DE PROJETO CONTRATADO ]</span>
             <h1 class="page-title" data-i18n="bg.title">BRIEFING DE IDENTIDADE PARA GASTRONOMIA</h1>
-            <p class="page-hero-text mono" data-i18n="bg.intro">
+            <p class="page-hero-text" data-i18n="bg.intro">
                 ESTE É O BRIEFING OFICIAL DO SEU PROJETO DE IDENTIDADE PARA GASTRONOMIA.<br>
                 RESPONDA COM CALMA E SINCERIDADE — SUAS RESPOSTAS SÃO A BASE DA PESQUISA E DA DIREÇÃO DA MARCA.
             </p>
@@ -62,7 +63,7 @@
 
                 <!-- WEB3FORMS INTEGRATION -->
                 <form action="https://api.web3forms.com/submit" method="POST"
-                    class="archival-form mono bi-form" id="briefing-gastronomia-form" novalidate>
+                    class="archival-form bi-form" id="briefing-gastronomia-form" novalidate>
 
                     <input type="hidden" name="access_key" value="a06bb7ff-964b-4f62-8842-6cccc54767f6">
                     <input type="hidden" name="subject" id="bg-subject" value="Briefing de Identidade para Gastronomia — Mari Design Co." data-keep>
@@ -182,10 +183,6 @@
                                     <label for="bg-atmosfera" data-i18n="bg.q.atmosfera">QUAL É A ATMOSFERA DESEJADA PARA O NEGÓCIO? *</label>
                                     <textarea name="atmosfera" id="bg-atmosfera" rows="3" data-req="1" required></textarea>
                                     <span class="caption" data-i18n="bg.h.atmosfera">Pode pensar em clima, ritmo, energia, sensação e tipo de presença que o espaço ou a marca devem transmitir.</span>
-                                </div>
-                                <div class="input-group full-width">
-                                    <label for="bg-conceito" data-i18n="bg.q.conceito">EXISTE ALGUMA HISTÓRIA, MEMÓRIA, REFERÊNCIA CULTURAL OU PONTO DE PARTIDA CONCEITUAL IMPORTANTE PARA A MARCA?</label>
-                                    <textarea name="conceito_ponto_partida" id="bg-conceito" rows="3"></textarea>
                                 </div>
                                 <div class="input-group full-width">
                                     <span class="label-as-legend" data-i18n="bg.q.aspectos">EXISTE ALGUM ASPECTO DA EXPERIÊNCIA QUE DEVE SER ESPECIALMENTE VALORIZADO?</span>
@@ -391,10 +388,6 @@
                                 <div class="input-group full-width">
                                     <label for="bg-frase" data-i18n="bg.q.frase_reconhecidos">COMPLETE: QUEREMOS SER RECONHECIDOS COMO UMA MARCA QUE ______. *</label>
                                     <input type="text" name="frase_reconhecidos" id="bg-frase" data-req="1" required>
-                                </div>
-                                <div class="input-group full-width">
-                                    <label for="bg-espaco-proprio" data-i18n="bg.q.espaco_proprio">SE SUA MARCA PUDESSE OCUPAR UM ESPAÇO PRÓPRIO NO MERCADO, QUAL VOCÊ GOSTARIA QUE FOSSE? *</label>
-                                    <textarea name="espaco_proprio" id="bg-espaco-proprio" rows="3" data-req="1" required></textarea>
                                 </div>
                             </div>
                         </section>
@@ -686,7 +679,7 @@
                     <span class="form-step-label mono muted" data-i18n="bg.success.label">RECEBIDO</span>
                     <h2 class="bi-step-title" data-i18n="bg.success.title">BRIEFING RECEBIDO.</h2>
                     <p class="bi-step-text" data-i18n="bg.success.text">Obrigada por dedicar esse tempo ao projeto. Vou usar suas respostas como base para a pesquisa e construção da direção da marca.</p>
-                    <a href="index.html" class="bi-btn mono" data-i18n="bg.success.home">[ ⟵ VOLTAR AO INÍCIO ]</a>
+                    <a href="/" class="bi-btn mono" data-i18n="bg.success.home">[ ⟵ VOLTAR AO INÍCIO ]</a>
                 </div>
 
             </div>

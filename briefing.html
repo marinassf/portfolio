@@ -15,12 +15,13 @@
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' text-anchor='middle' fill='%230a0a0a'%3EM%3C/text%3E%3C/svg%3E">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://maridesignco.com/briefing">
+    <meta property="og:url" content="https://maridesignco.com/briefing">
+    <meta property="og:site_name" content="Mari Design Co.">
 </head>
 
 <body>
@@ -29,19 +30,18 @@
 
     <header id="site-header">
         <div class="header-left">
-            <a href="index.html" class="logo">MARI DESIGN CO.</a>
+            <a href="/" class="logo">MARI DESIGN CO.</a>
             <span class="mono muted desktop-only">FILE_005_B</span>
         </div>
         <nav class="header-center" id="main-nav">
-            <a href="index.html#work" data-i18n="nav.work">TRABALHOS</a>
-            <a href="services.html" data-i18n="nav.services">SERVIÇOS</a>
-            <a href="index.html#about" data-i18n="nav.about">SOBRE</a>
-            <a href="#footer" data-i18n="nav.contact">CONTATO</a>
+            <a href="/#work" data-i18n="nav.work">TRABALHOS</a>
+            <a href="/services" data-i18n="nav.services">SERVIÇOS</a>
+            <a href="https://wa.me/5566920002322?text=Ol%C3%A1%2C%20Marina!%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." data-i18n="nav.contact" target="_blank" rel="noopener">CONTATO</a>
         </nav>
         <div class="header-right">
             <button id="nav-toggle" class="mono" aria-expanded="false" aria-controls="main-nav"
                 data-i18n="nav.menu">[ MENU ]</button>
-            <a href="index.html" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
+            <a href="/" class="mono desktop-only" data-i18n="nav.home">[ ⟵ INÍCIO ]</a>
             <button id="lang-toggle" class="mono" aria-label="Toggle Language">PT / EN</button>
         </div>
     </header>
@@ -53,9 +53,9 @@
 
             <h1 class="page-title" data-i18n="briefing.title">BRIEFING</h1>
 
-            <p class="page-hero-text mono" data-i18n="briefing.intro">
-                POR FAVOR, PREENCHA OS CAMPOS ABAIXO COM O MÁXIMO DE DETALHES.<br>
-                ISSO NOS AJUDARÁ A ENTENDER O ESCOPO E RETORNAR COM UMA PROPOSTA PRECISA.
+            <p class="page-hero-text" data-i18n="briefing.intro">
+                UM PRIMEIRO CONTATO RÁPIDO PARA EU ENTENDER SEU PROJETO E RETORNAR COM UMA PROPOSTA.<br>
+                SÃO SÓ ALGUNS CAMPOS — O BRIEFING APROFUNDADO VEM DEPOIS, SE A GENTE SEGUIR JUNTOS.
             </p>
 
             <span class="caption" data-i18n="briefing.caption">Resposta em até 2 dias úteis</span>
@@ -65,7 +65,7 @@
             <div class="form-container">
 
                 <!-- WEB3FORMS INTEGRATION -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="archival-form mono"
+                <form action="https://api.web3forms.com/submit" method="POST" class="archival-form"
                     id="briefing-form" novalidate>
 
                     <input type="hidden" name="access_key" value="a06bb7ff-964b-4f62-8842-6cccc54767f6">
@@ -138,19 +138,6 @@
                             <label for="bf-sobre-marca" data-i18n="bf.id.sobre">CONTE BREVEMENTE SOBRE A MARCA E O QUE ELA OFERECE. *</label>
                             <textarea name="sobre_marca" id="bf-sobre-marca" rows="3" data-req="1" required></textarea>
                         </div>
-                        <div class="input-group full-width">
-                            <label for="bf-id-atual" data-i18n="bf.id.atual">EXISTE UMA IDENTIDADE VISUAL ATUALMENTE? *</label>
-                            <select name="identidade_atual" id="bf-id-atual" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Não" data-i18n="bf.nao">NÃO</option>
-                                <option value="Em desenvolvimento" data-i18n="bf.id.a3">ESTÁ EM DESENVOLVIMENTO</option>
-                            </select>
-                        </div>
-                        <div class="input-group full-width" data-when="bf-id-atual:Sim" hidden>
-                            <label for="bf-problema" data-i18n="bf.id.problema">O QUE VOCÊ SENTE QUE NÃO FUNCIONA NA IDENTIDADE ATUAL?</label>
-                            <textarea name="problema_identidade" id="bf-problema" rows="3"></textarea>
-                        </div>
                         </div>
                     </div>
 
@@ -188,23 +175,6 @@
                             <label for="bf-sobre-negocio" data-i18n="bf.ga.sobre">CONTE BREVEMENTE SOBRE O NEGÓCIO. *</label>
                             <textarea name="sobre_negocio" id="bf-sobre-negocio" rows="3" data-req="1" required></textarea>
                         </div>
-                        <div class="input-group full-width">
-                            <span class="label-as-legend" data-i18n="bf.ga.materiais">ALÉM DA IDENTIDADE VISUAL, QUAIS MATERIAIS VOCÊ IMAGINA PRECISAR?</span>
-                            <div class="check-grid">
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Menu"><span data-i18n="bf.ga.mat1">MENU / CARDÁPIO</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Embalagem"><span data-i18n="bf.ga.mat2">EMBALAGEM</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Rótulo"><span data-i18n="bf.ga.mat3">RÓTULO / ADESIVO</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Papelaria"><span data-i18n="bf.ga.mat4">PAPELARIA</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Materiais digitais"><span data-i18n="bf.ga.mat5">MATERIAIS DIGITAIS</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Outro" id="bf-mat-gastro-outro"><span data-i18n="bf.outro">OUTRO</span></label>
-                                <label class="check-item"><input type="checkbox" name="materiais_gastronomia" value="Ainda não sei"><span data-i18n="bf.naosei">AINDA NÃO SEI</span></label>
-                            </div>
-                            <span class="caption" data-i18n="bf.ga.help">Não precisa definir tudo agora.</span>
-                        </div>
-                        <div class="input-group full-width" data-when="bf-mat-gastro-outro:checked" hidden>
-                            <label for="bf-mat-gastro-outro-txt" data-i18n="bf.especifique">QUAL?</label>
-                            <input type="text" name="materiais_gastronomia_outro" id="bf-mat-gastro-outro-txt">
-                        </div>
                         </div>
                     </div>
 
@@ -238,24 +208,6 @@
                                 <option value="Parcialmente" data-i18n="bf.parcial">PARCIALMENTE</option>
                             </select>
                         </div>
-                        <div class="input-group full-width">
-                            <label for="bf-imp-conteudo" data-i18n="bf.imp.conteudo">VOCÊ JÁ POSSUI O CONTEÚDO QUE ENTRARÁ NA PEÇA? *</label>
-                            <select name="tem_conteudo" id="bf-imp-conteudo" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Tudo pronto" data-i18n="bf.imp.c1">SIM, ESTÁ TUDO PRONTO</option>
-                                <option value="Parte do conteúdo" data-i18n="bf.imp.c2">TENHO PARTE DO CONTEÚDO</option>
-                                <option value="Ainda não" data-i18n="bf.imp.c3">AINDA NÃO</option>
-                            </select>
-                        </div>
-                        <div class="input-group full-width">
-                            <label for="bf-imp-gráfica" data-i18n="bf.imp.gráfica">JÁ POSSUI GRÁFICA OU FORNECEDOR DEFINIDO? *</label>
-                            <select name="tem_grafica" id="bf-imp-gráfica" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Não" data-i18n="bf.nao">NÃO</option>
-                                <option value="Pesquisando" data-i18n="bf.pesquisando">AINDA ESTOU PESQUISANDO</option>
-                            </select>
-                        </div>
                         </div>
                     </div>
 
@@ -286,15 +238,6 @@
                                 <option value="Parcialmente" data-i18n="bf.parcial">PARCIALMENTE</option>
                             </select>
                         </div>
-                        <div class="input-group full-width">
-                            <label for="bf-dig-conteudo" data-i18n="bf.dig.conteudo">VOCÊ JÁ POSSUI OS CONTEÚDOS NECESSÁRIOS? *</label>
-                            <select name="tem_conteudo_digital" id="bf-dig-conteudo" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Parcialmente" data-i18n="bf.parcial">PARCIALMENTE</option>
-                                <option value="Ainda não" data-i18n="bf.imp.c3">AINDA NÃO</option>
-                            </select>
-                        </div>
                         </div>
                     </div>
 
@@ -317,27 +260,6 @@
                         <div class="input-group full-width" data-when="bf-tipo-editorial:Outro" hidden>
                             <label for="bf-ed-outro-txt" data-i18n="bf.especifique">QUAL?</label>
                             <input type="text" name="tipo_editorial_outro" id="bf-ed-outro-txt">
-                        </div>
-                        <div class="input-group full-width">
-                            <label for="bf-ed-conteudo" data-i18n="bf.ed.conteudo">O CONTEÚDO JÁ ESTÁ FINALIZADO? *</label>
-                            <select name="conteudo_editorial" id="bf-ed-conteudo" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Fase final" data-i18n="bf.ed.c2">ESTÁ EM FASE FINAL</option>
-                                <option value="Sendo produzido" data-i18n="bf.ed.c3">AINDA ESTÁ SENDO PRODUZIDO</option>
-                            </select>
-                        </div>
-                        <div class="input-group full-width">
-                            <label for="bf-sabe-paginas" data-i18n="bf.ed.sabepag">VOCÊ JÁ SABE APROXIMADAMENTE QUANTAS PÁGINAS TERÁ? *</label>
-                            <select name="sabe_paginas" id="bf-sabe-paginas" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Não" data-i18n="bf.nao">NÃO</option>
-                            </select>
-                        </div>
-                        <div class="input-group full-width" data-when="bf-sabe-paginas:Sim" hidden>
-                            <label for="bf-paginas" data-i18n="bf.ed.paginas">QUANTAS PÁGINAS APROXIMADAMENTE?</label>
-                            <input type="number" name="paginas" id="bf-paginas">
                         </div>
                         <div class="input-group full-width">
                             <label for="bf-formato-editorial" data-i18n="bf.ed.formato">O PROJETO SERÁ: *</label>
@@ -363,10 +285,6 @@
                             <label for="bf-ns-resolver" data-i18n="bf.ns.resolver">O QUE VOCÊ GOSTARIA DE RESOLVER OU MELHORAR NESTE MOMENTO? *</label>
                             <textarea name="o_que_resolver" id="bf-ns-resolver" rows="3" data-req="1" required></textarea>
                         </div>
-                        <div class="input-group full-width">
-                            <label for="bf-ns-agora" data-i18n="bf.ns.agora">O QUE FEZ VOCÊ PROCURAR UMA DESIGNER AGORA?</label>
-                            <textarea name="por_que_agora" id="bf-ns-agora" rows="3"></textarea>
-                        </div>
                         </div>
                     </div>
 
@@ -388,22 +306,7 @@
                                 <option value="Mais de 2 meses" data-i18n="bf.in4">DAQUI A MAIS DE 2 MESES</option>
                                 <option value="Pesquisando" data-i18n="bf.pesquisando">AINDA ESTOU PESQUISANDO</option>
                             </select>
-                        </div>
-                        <div class="input-group full-width">
-                            <label for="bf-tem-data" data-i18n="bf.temdata">EXISTE ALGUMA DATA IMPORTANTE PARA O PROJETO ESTAR PRONTO? *</label>
-                            <select name="tem_data" id="bf-tem-data" data-req="1" required>
-                                <option value="" disabled selected data-i18n="bf.sel">[ SELECIONE ]</option>
-                                <option value="Sim" data-i18n="bf.sim">SIM</option>
-                                <option value="Não" data-i18n="bf.nao">NÃO</option>
-                            </select>
-                        </div>
-                        <div class="input-group full-width" data-when="bf-tem-data:Sim" hidden>
-                            <label for="bf-data" data-i18n="bf.data">QUAL É A DATA?</label>
-                            <input type="date" name="data_projeto" id="bf-data">
-                        </div>
-                        <div class="input-group full-width" data-when="bf-tem-data:Sim" hidden>
-                            <label for="bf-motivo-data" data-i18n="bf.motivodata">EXISTE ALGUM LANÇAMENTO, EVENTO OU MOTIVO RELACIONADO A ESSA DATA?</label>
-                            <input type="text" name="motivo_data" id="bf-motivo-data">
+                            <span class="caption" data-i18n="bf.inicio.help">Se houver uma data importante (lançamento, evento), me conte no objetivo acima.</span>
                         </div>
                         <div class="input-group full-width">
                             <label for="bf-investimento" data-i18n="bf.investimento">VOCÊ JÁ DEFINIU UMA FAIXA DE INVESTIMENTO PARA ESTE PROJETO? *</label>

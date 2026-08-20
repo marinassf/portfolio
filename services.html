@@ -15,12 +15,13 @@
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' text-anchor='middle' fill='%230a0a0a'%3EM%3C/text%3E%3C/svg%3E">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://maridesignco.com/services">
+    <meta property="og:url" content="https://maridesignco.com/services">
+    <meta property="og:site_name" content="Mari Design Co.">
 </head>
 
 <body>
@@ -29,14 +30,13 @@
 
     <header id="site-header">
         <div class="header-left">
-            <a href="index.html" class="logo">MARI DESIGN CO.</a>
+            <a href="/" class="logo">MARI DESIGN CO.</a>
             <span class="mono muted desktop-only">FILE_004</span>
         </div>
         <nav class="header-center" id="main-nav">
-            <a href="index.html#work" data-i18n="nav.work">TRABALHOS</a>
-            <a href="services.html" data-i18n="nav.services">SERVIÇOS</a>
-            <a href="index.html#about" data-i18n="nav.about">SOBRE</a>
-            <a href="#footer" data-i18n="nav.contact">CONTATO</a>
+            <a href="/#work" data-i18n="nav.work">TRABALHOS</a>
+            <a href="/services" data-i18n="nav.services">SERVIÇOS</a>
+            <a href="https://wa.me/5566920002322?text=Ol%C3%A1%2C%20Marina!%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." data-i18n="nav.contact" target="_blank" rel="noopener">CONTATO</a>
         </nav>
         <div class="header-right">
             <button id="nav-toggle" class="mono" aria-expanded="false" aria-controls="main-nav"
@@ -55,7 +55,7 @@
                 <span data-i18n="services.giant2">VISUAIS</span>
             </h1>
 
-            <p class="page-hero-text mono" data-i18n="services.intro.raw">
+            <p class="page-hero-text" data-i18n="services.intro.raw">
                 NÓS NÃO FAZEMOS APENAS LOGOTIPOS.<br>
                 CONSTRUÍMOS SISTEMAS ESCALÁVEIS.<br>
                 GRID. TIPOGRAFIA. CONTRASTE.<br>
@@ -81,7 +81,7 @@
                         <h3 data-i18n="services.pkg1.name">IDENTIDADE VISUAL</h3>
                         <span class="caption" data-i18n="services.pkg1.cap">Sistema completo de marca</span>
                     </div>
-                    <div class="raw-pkg-details mono">
+                    <div class="raw-pkg-details">
                         <ul>
                             <li data-i18n="services.pkg1.item1">+ DIRE&Ccedil;&Atilde;O ESTRAT&Eacute;GICA E CONCEITO DA MARCA</li>
                             <li data-i18n="services.pkg1.item2">+ SISTEMA DE LOGOTIPO E VARIA&Ccedil;&Otilde;ES</li>
@@ -98,7 +98,7 @@
                             <span class="caption" data-i18n="services.pkg1.note">Servi&ccedil;os impressos, digitais e editoriais podem ser
                                 adicionados ao projeto conforme a necessidade da marca.</span>
                         </div>
-                        <a href="briefing.html" class="raw-action-btn mt-2">
+                        <a href="/briefing" class="raw-action-btn mt-2">
                             <span data-i18n="services.pkg.btn">[ INICIAR PROJETO &#10230; ]</span>
                         </a>
                     </div>
@@ -111,7 +111,7 @@
                         <h3 data-i18n="services.pkg2.name">IDENTIDADE PARA GASTRONOMIA</h3>
                         <span class="caption" data-i18n="services.pkg2.cap">Solu&ccedil;&atilde;o para restaurantes</span>
                     </div>
-                    <div class="raw-pkg-details mono">
+                    <div class="raw-pkg-details">
                         <p class="muted pkg-includes" data-i18n="services.pkg2.item0">[ INCLUI TUDO DA IDENTIDADE
                             VISUAL + ]</p>
                         <ul>
@@ -126,7 +126,7 @@
                             <span class="caption" data-i18n="services.pkg2.note">Outros materiais
                                 podem ser inclu&iacute;dos conforme a necessidade do projeto.</span>
                         </div>
-                        <a href="briefing.html" class="raw-action-btn mt-2">
+                        <a href="/briefing" class="raw-action-btn mt-2">
                             <span data-i18n="services.pkg.btn">[ INICIAR PROJETO &#10230; ]</span>
                         </a>
                     </div>
@@ -141,13 +141,13 @@
                 <span class="muted" data-i18n="services.sec2.tag">INDIVIDUAIS OU COMBINADOS</span>
             </div>
 
-            <p class="mono muted mb-2" data-i18n="services.avulsos.intro">
+            <p class="muted mb-2" data-i18n="services.avulsos.intro">
                 PE&Ccedil;AS E MATERIAIS PARA MARCAS EM DIFERENTES MOMENTOS.<br>
                 PODEM SER CONTRATADOS INDIVIDUALMENTE OU ADICIONADOS A UM PROJETO DE IDENTIDADE VISUAL.
             </p>
 
             <div class="dense-addons-grid">
-                <div class="dense-mono-block mono">
+                <div class="dense-mono-block">
                     <span class="muted block mb-1">/ <span data-i18n="services.addon1.tag">IMPRESSO</span> &nbsp; 0.1</span>
                     <p data-i18n="services.addon1.raw">
                         - CART&Atilde;O DE VISITA<br>
@@ -160,7 +160,7 @@
                         - MENUS E CARD&Aacute;PIOS
                     </p>
                 </div>
-                <div class="dense-mono-block mono">
+                <div class="dense-mono-block">
                     <span class="muted block mb-1">/ <span data-i18n="services.addon2.tag">DIGITAL</span> &nbsp; 0.2</span>
                     <p data-i18n="services.addon2.raw">
                         - ASSINATURA DE E-MAIL<br>
@@ -170,7 +170,7 @@
                         - LANDING PAGES
                     </p>
                 </div>
-                <div class="dense-mono-block mono">
+                <div class="dense-mono-block">
                     <span class="muted block mb-1">/ <span data-i18n="services.addon3.tag">EDITORIAL</span> &nbsp; 0.3</span>
                     <p data-i18n="services.addon3.raw">
                         - LIVROS<br>
@@ -195,7 +195,7 @@
                     <span class="process-index mono">01</span>
                     <h3 class="process-name" data-i18n="services.proc.1a">DESCOBERTA</h3>
                     <span class="process-out mono">&#10230; <span data-i18n="services.proc.1b">PESQUISA</span></span>
-                    <p class="process-desc mono muted" data-i18n="services.proc.1c">
+                    <p class="process-desc muted" data-i18n="services.proc.1c">
                         Conversa inicial, an&aacute;lise do mercado e do que j&aacute; existe. &Eacute; daqui que sai o escopo fechado.
                     </p>
                 </li>
@@ -204,7 +204,7 @@
                     <span class="process-index mono">02</span>
                     <h3 class="process-name" data-i18n="services.proc.2a">ESTRAT&Eacute;GIA</h3>
                     <span class="process-out mono">&#10230; <span data-i18n="services.proc.2b">DIRE&Ccedil;&Atilde;O</span></span>
-                    <p class="process-desc mono muted" data-i18n="services.proc.2c">
+                    <p class="process-desc muted" data-i18n="services.proc.2c">
                         Posicionamento, territ&oacute;rio visual e moodboard. Voc&ecirc; aprova a dire&ccedil;&atilde;o antes de qualquer arte.
                     </p>
                 </li>
@@ -213,7 +213,7 @@
                     <span class="process-index mono">03</span>
                     <h3 class="process-name" data-i18n="services.proc.3a">DESIGN</h3>
                     <span class="process-out mono">&#10230; <span data-i18n="services.proc.3b">SISTEMA</span></span>
-                    <p class="process-desc mono muted" data-i18n="services.proc.3c">
+                    <p class="process-desc muted" data-i18n="services.proc.3c">
                         Logo, tipografia, cores e aplica&ccedil;&otilde;es constru&iacute;dos como um sistema &mdash; n&atilde;o pe&ccedil;as soltas.
                     </p>
                 </li>
@@ -222,13 +222,13 @@
                     <span class="process-index mono">04</span>
                     <h3 class="process-name" data-i18n="services.proc.4a">ENTREGA</h3>
                     <span class="process-out mono">&#10230; <span data-i18n="services.proc.4b">MANUAL</span></span>
-                    <p class="process-desc mono muted" data-i18n="services.proc.4c">
+                    <p class="process-desc muted" data-i18n="services.proc.4c">
                         Arquivos organizados, manual de uso e uma call de passagem para voc&ecirc; aplicar sozinha.
                     </p>
                 </li>
             </ol>
 
-            <div class="process-note mono">
+            <div class="process-note">
                 <span class="muted" data-i18n="services.note">NOTA</span>
                 <p data-i18n="services.proc.disclaimer">
                     ACOMPANHAMOS VOC&Ecirc; DURANTE TODO O PROCESSO &mdash;<br>
@@ -248,31 +248,81 @@
                 <details class="faq-item">
                     <summary class="faq-summary">
                         <span class="faq-num mono muted">0.1</span>
-                        <span class="faq-q mono" data-i18n="services.faq1.q">QUANTO TEMPO LEVA UM PROJETO?</span>
+                        <span class="faq-q" data-i18n="services.faq1.q">QUAIS SERVIÇOS POSSO CONTRATAR?</span>
                         <span class="faq-toggle" aria-hidden="true"></span>
                     </summary>
                     <div class="faq-answer">
-                        <p class="mono muted" data-i18n="services.faq1.a">GERALMENTE ENTRE 4 A 6 SEMANAS, DEPENDENDO DO PACOTE (GASTRONOMIA LEVA MAIS TEMPO).</p>
+                        <p class="mono muted" data-i18n="services.faq1.a">Trabalho com identidade visual, projetos para marcas de gastronomia, design para redes sociais e peças avulsas para meios digitais e impressos. Os serviços disponíveis podem ser consultados na página de serviços.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-summary">
                         <span class="faq-num mono muted">0.2</span>
-                        <span class="faq-q mono" data-i18n="services.faq2.q">CRIAM APENAS O LOGOTIPO AVULSO?</span>
+                        <span class="faq-q" data-i18n="services.faq2.q">É POSSÍVEL CONTRATAR APENAS UM LOGOTIPO?</span>
                         <span class="faq-toggle" aria-hidden="true"></span>
                     </summary>
                     <div class="faq-answer">
-                        <p class="mono muted" data-i18n="services.faq2.a">N&Atilde;O. UM LOGOTIPO SOZINHO N&Atilde;O SUSTENTA UMA MARCA. DESENVOLVEMOS SISTEMAS COMPLETOS.</p>
+                        <p class="mono muted" data-i18n="services.faq2.a">Não. O logotipo é desenvolvido como parte de um sistema visual, para que a marca tenha consistência e possa funcionar em diferentes aplicações.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-summary">
                         <span class="faq-num mono muted">0.3</span>
-                        <span class="faq-q mono" data-i18n="services.faq3.q">CONDI&Ccedil;&Otilde;ES DE PAGAMENTO?</span>
+                        <span class="faq-q" data-i18n="services.faq3.q">POSSO CONTRATAR UMA PEÇA AVULSA?</span>
                         <span class="faq-toggle" aria-hidden="true"></span>
                     </summary>
                     <div class="faq-answer">
-                        <p class="mono muted" data-i18n="services.faq3.a">50% SINAL PARA RESERVA DE AGENDA, 50% NA ENTREGA FINAL DOS ARQUIVOS.</p>
+                        <p class="mono muted" data-i18n="services.faq3.a">Sim. Alguns materiais digitais e impressos podem ser contratados separadamente, como cartões, menus, banners, materiais para redes sociais e outras peças disponíveis na página de serviços.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-summary">
+                        <span class="faq-num mono muted">0.4</span>
+                        <span class="faq-q" data-i18n="services.faq4.q">QUANTO TEMPO LEVA UM PROJETO?</span>
+                        <span class="faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p class="mono muted" data-i18n="services.faq4.a">O prazo varia conforme o serviço, a complexidade e a disponibilidade de agenda. Projetos de identidade visual costumam levar entre 4 e 6 semanas, enquanto projetos maiores ou voltados à gastronomia podem exigir um período maior.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-summary">
+                        <span class="faq-num mono muted">0.5</span>
+                        <span class="faq-q" data-i18n="services.faq5.q">QUANTAS ALTERAÇÕES ESTÃO INCLUÍDAS?</span>
+                        <span class="faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p class="mono muted" data-i18n="services.faq5.a">Cada projeto possui etapas de apresentação e ajustes definidas de acordo com o serviço contratado. Tudo é informado na proposta antes do início do projeto.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-summary">
+                        <span class="faq-num mono muted">0.6</span>
+                        <span class="faq-q" data-i18n="services.faq6.q">COMO FUNCIONA A CONTRATAÇÃO?</span>
+                        <span class="faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p class="mono muted" data-i18n="services.faq6.a">Após o envio do pré-briefing, analiso as necessidades do projeto e, estando tudo alinhado, envio a proposta com escopo, prazo e investimento. Com a aprovação e o pagamento do sinal, o projeto entra oficialmente na agenda.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-summary">
+                        <span class="faq-num mono muted">0.7</span>
+                        <span class="faq-q" data-i18n="services.faq7.q">COMO FUNCIONA O PAGAMENTO?</span>
+                        <span class="faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p class="mono muted" data-i18n="services.faq7.a">O pagamento é dividido em 50% na reserva da agenda e 50% na entrega final. É possível pagar via Pix ou parcelar em até 6x, com acréscimo das taxas da plataforma. Para clientes internacionais, as condições são combinadas previamente.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-summary">
+                        <span class="faq-num mono muted">0.8</span>
+                        <span class="faq-q" data-i18n="services.faq8.q">ATENDE CLIENTES DE OUTRAS CIDADES OU PAÍSES?</span>
+                        <span class="faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p class="mono muted" data-i18n="services.faq8.a">Sim. Todo o processo pode ser realizado online, permitindo atender projetos no Brasil e no exterior.</p>
                     </div>
                 </details>
             </div>
@@ -284,7 +334,7 @@
     <footer id="footer" class="footer-reduced observe">
         <div class="footer-note mono">
             <span data-i18n="services.footer.question">N&atilde;o encontrou o que precisava?</span>
-            <a href="briefing.html" class="raw-action-btn" data-i18n="footer.cta.services">[ PROJETO SOB MEDIDA &#10230; ]</a>
+            <a href="/briefing" class="raw-action-btn" data-i18n="footer.cta.services">[ PROJETO SOB MEDIDA &#10230; ]</a>
         </div>
 
         <div class="footer-bottom">

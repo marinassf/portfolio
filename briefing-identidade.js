@@ -210,6 +210,8 @@
             "bi.msg.erro": "Não foi possível enviar o briefing agora. Tente novamente em alguns instantes.",
             "bi.limit.msg3": "Você pode selecionar até 3 opções.",
             "bi.limit.msg5": "Você pode selecionar até 5 opções.",
+            "bi.limit.ate3": "(ATÉ 3)",
+            "bi.limit.ate5": "(ATÉ 5)",
             "bi.subject": "Briefing de Identidade Visual"
         },
         en: {
@@ -409,6 +411,8 @@
             "bi.msg.erro": "The brief couldn't be sent right now. Please try again in a few moments.",
             "bi.limit.msg3": "You can select up to 3 options.",
             "bi.limit.msg5": "You can select up to 5 options.",
+            "bi.limit.ate3": "(UP TO 3)",
+            "bi.limit.ate5": "(UP TO 5)",
             "bi.subject": "Visual Identity Brief"
         }
     };
