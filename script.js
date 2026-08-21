@@ -1,5 +1,5 @@
 /**
- * MARI DESIGN CO. — Vanilla JS
+ * NIVES STUDIO — Vanilla JS
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "bf.disclaimer": "Essas informações são apenas um primeiro contato para eu entender seu projeto. Caso a gente siga juntos, você receberá um briefing mais aprofundado antes do início do processo criativo.",
             "bf.enviando": "ENVIANDO…",
             "bf.sucesso": "RECEBIDO. RESPONDO EM ATÉ 2 DIAS ÚTEIS.",
-            "bf.erro": "NÃO FOI POSSÍVEL ENVIAR. TENTE DE NOVO OU ESCREVA PARA HELLO@MARIDESIGN.CO",
+            "bf.erro": "NÃO FOI POSSÍVEL ENVIAR. TENTE DE NOVO OU ESCREVA PARA HELLO@NIVES.STUDIO",
             "services.avulsos.intro": "PEÇAS E MATERIAIS PARA MARCAS EM DIFERENTES MOMENTOS.<br>PODEM SER CONTRATADOS INDIVIDUALMENTE OU ADICIONADOS A UM PROJETO DE IDENTIDADE VISUAL.",
             "services.pkg1.item6": "+ APRESENTAÇÃO DA IDENTIDADE VISUAL",
             "services.pkg1.item7": "+ MANUAL DE MARCA",
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "bf.disclaimer": "This is just a first contact so I can understand your project. If we move forward, you’ll receive a deeper briefing before the creative process starts.",
             "bf.enviando": "SENDING…",
             "bf.sucesso": "RECEIVED. I’LL REPLY WITHIN 2 BUSINESS DAYS.",
-            "bf.erro": "COULDN’T SEND. PLEASE TRY AGAIN OR WRITE TO HELLO@MARIDESIGN.CO",
+            "bf.erro": "COULDN’T SEND. PLEASE TRY AGAIN OR WRITE TO HELLO@NIVES.STUDIO",
             "services.avulsos.intro": "PIECES AND MATERIALS FOR BRANDS AT DIFFERENT STAGES.<br>THEY CAN BE HIRED ON THEIR OWN OR ADDED TO A VISUAL IDENTITY PROJECT.",
             "services.pkg1.item6": "+ VISUAL IDENTITY PRESENTATION",
             "services.pkg1.item7": "+ BRAND GUIDELINES",

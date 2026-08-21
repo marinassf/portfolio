@@ -1,5 +1,5 @@
 /**
- * BRIEFING DE IDENTIDADE VISUAL — Mari Design Co.
+ * BRIEFING DE IDENTIDADE VISUAL — Nives Studio
  * Página privada por URL (noindex). Reaproveita o design do site.
  * Toda a lógica de etapas, condicionais, limites, conflito, validação,
  * envio (Web3Forms) e i18n PT/EN específica desta página vive aqui.
@@ -654,7 +654,7 @@
 
             // assunto dinâmico com o nome da marca
             const nome = (form.querySelector('#bi-nome-marca') || {}).value || '';
-            subjectField.value = t('bi.subject') + ' — ' + (nome.trim() || 'Mari Design Co.');
+            subjectField.value = t('bi.subject') + ' — ' + (nome.trim() || 'Nives Studio');
 
             enviando = true;
             btnSubmit.disabled = true;

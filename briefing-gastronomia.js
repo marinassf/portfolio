@@ -1,5 +1,5 @@
 /**
- * BRIEFING DE IDENTIDADE PARA GASTRONOMIA — Mari Design Co.
+ * BRIEFING DE IDENTIDADE PARA GASTRONOMIA — Nives Studio
  * Página privada por URL (noindex). Reaproveita o design do site e as
  * mesmas classes do briefing de identidade. Etapas, condicionais,
  * limites, validação, envio (Web3Forms) e i18n PT/EN vivem aqui.
@@ -577,7 +577,7 @@
             if (!validateStep(steps[current])) return;
 
             const nome = (form.querySelector('#bg-nome-marca') || {}).value || '';
-            subjectField.value = t('bg.subject') + ' — ' + (nome.trim() || 'Mari Design Co.');
+            subjectField.value = t('bg.subject') + ' — ' + (nome.trim() || 'Nives Studio');
 
             enviando = true;
             btnSubmit.disabled = true;

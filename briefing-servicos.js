@@ -1,5 +1,5 @@
 /**
- * BRIEFING DE SERVIÇOS AVULSOS — Mari Design Co.
+ * BRIEFING DE SERVIÇOS AVULSOS — Nives Studio
  * Página privada por URL (noindex). Um único briefing que se adapta aos
  * serviços contratados: cada serviço ativa apenas os blocos (A–G) que
  * realmente se aplicam. Reaproveita o design e as classes dos demais
@@ -580,7 +580,7 @@
 
         /* assunto: Briefing de Serviços — [MARCA] — [resumo dos serviços] */
         function buildSubject() {
-            const nome = ((form.querySelector('#bs-nome-marca') || {}).value || '').trim() || 'Mari Design Co.';
+            const nome = ((form.querySelector('#bs-nome-marca') || {}).value || '').trim() || 'Nives Studio';
             const checked = Array.from(form.querySelectorAll('input[name="servicos_contratados"]:checked'));
             let resumo = '';
             if (checked.length) {

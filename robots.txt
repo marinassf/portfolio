@@ -4,4 +4,4 @@ Disallow: /briefing-identidade
 Disallow: /briefing-gastronomia
 Disallow: /briefing-servicos
 
-Sitemap: https://maridesignco.com/sitemap.xml
+Sitemap: https://nives.studio/sitemap.xml
